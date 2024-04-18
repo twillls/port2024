@@ -1,6 +1,6 @@
 uuid: 0e4cb640-3c18-4fa0-990d-7e1b0ec172fc
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -11,7 +11,7 @@ _core:
 id: taylorwills_powered
 theme: taylorwills
 region: header
-weight: 0
+weight: 3
 provider: null
 plugin: system_powered_by_block
 settings:

@@ -1,6 +1,6 @@
 uuid: de18ffc9-b127-4fd5-978d-a1b451112c43
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - help
@@ -11,7 +11,7 @@ _core:
 id: taylorwills_help
 theme: taylorwills
 region: header
-weight: 0
+weight: 2
 provider: null
 plugin: help_block
 settings:

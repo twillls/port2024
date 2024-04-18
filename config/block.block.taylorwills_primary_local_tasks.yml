@@ -8,8 +8,8 @@ _core:
   default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
 id: taylorwills_primary_local_tasks
 theme: taylorwills
-region: header
-weight: -4
+region: highlighted
+weight: -6
 provider: null
 plugin: local_tasks_block
 settings:

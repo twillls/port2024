@@ -3,7 +3,10 @@ type: theme
 description: A custom theme for my portfolio B)
 core_version_requirement: '>=10.0'
 base theme: stark
+libraries:
+  - taylorwills/global
 regions:
   header: 'Header'
+  highlighted: 'Highlighted'
   content: 'Content'
   footer: 'Footer'

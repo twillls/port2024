@@ -1,0 +1,22 @@
+uuid: ae3eccc2-cba7-430c-b7cc-6883dddab118
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - taylorwills
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: taylorwills_content
+theme: taylorwills
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

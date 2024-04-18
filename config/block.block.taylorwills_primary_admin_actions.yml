@@ -1,0 +1,20 @@
+uuid: cc7990aa-3cc7-40fe-9812-b4554101e079
+langcode: en
+status: true
+dependencies:
+  theme:
+    - taylorwills
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: taylorwills_primary_admin_actions
+theme: taylorwills
+region: header
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

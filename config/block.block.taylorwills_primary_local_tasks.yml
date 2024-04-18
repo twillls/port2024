@@ -1,0 +1,22 @@
+uuid: d19f524c-7a59-4c87-b3cb-09b4222c6585
+langcode: en
+status: true
+dependencies:
+  theme:
+    - taylorwills
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: taylorwills_primary_local_tasks
+theme: taylorwills
+region: header
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

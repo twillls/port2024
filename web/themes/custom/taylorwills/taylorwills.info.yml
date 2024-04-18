@@ -1,0 +1,9 @@
+name: Taylor Custom
+type: theme
+description: A custom theme for my portfolio B)
+core_version_requirement: '>=10.0'
+base theme: stark
+regions:
+  header: 'Header'
+  content: 'Content'
+  footer: 'Footer'

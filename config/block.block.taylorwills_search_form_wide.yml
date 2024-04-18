@@ -1,0 +1,23 @@
+uuid: a9db22d6-8d33-466c-bb02-1b837e2f8d63
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - taylorwills
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: taylorwills_search_form_wide
+theme: taylorwills
+region: header
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

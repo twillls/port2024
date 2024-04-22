@@ -59,8 +59,40 @@ td {
 
 h1 {
   font-size: 4.5rem;
+  margin: 0 auto;
+  padding: $xl-space 0;
 }
 
 h2 {
+  display: flex;
   font-size: 3rem;
+  white-space: nowrap;
+
+  &::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid $light-green;
+    margin-top: 58px;
+    margin-left: 2rem;
+  }
+
+  &.right-align {
+    text-align: right;
+    
+    &::before {
+      display: block;
+      content: '';
+      width: 100%;
+      height: 100%;
+      border-bottom: 2px solid $light-green;
+      margin-top: 58px;
+      margin-right: 2rem;
+    }
+
+    &::after {
+      content: none;
+    }
+  }
 }

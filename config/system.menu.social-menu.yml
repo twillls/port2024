@@ -1,0 +1,8 @@
+uuid: 76cd5970-ec76-4d23-9e85-580c6bfc1f37
+langcode: en
+status: true
+dependencies: {  }
+id: social-menu
+label: 'Social Menu'
+description: ''
+locked: false

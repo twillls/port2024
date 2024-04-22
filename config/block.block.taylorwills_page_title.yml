@@ -9,7 +9,7 @@ _core:
 id: taylorwills_page_title
 theme: taylorwills
 region: content
-weight: -7
+weight: -3
 provider: null
 plugin: page_title_block
 settings:

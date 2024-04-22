@@ -1,7 +1,28 @@
+$darkest-green: #1b231a;
+$dark-green: #32423d;
+$green: #7a8279;
+$light-green: #f3f9f2;
+
+$small: 768px;
+$medium: 992px;
+$large: 1200px;
+$xlarge: 1600px;
+
+$sm-space: 32px;
+$sm-md-space: 48px;
+$md-space: 60px;
+$lg-space: 100px;
+$xl-space: 200px;
+
 header .header,
 .highlighted,
 main .layout-content,
 .footer  {
 	padding: 1.5rem;
 	max-width: 75rem;
+}
+
+body {
+	background-color: $darkest-green;
+	color: $light-green;
 }

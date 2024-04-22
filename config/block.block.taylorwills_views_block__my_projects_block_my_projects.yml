@@ -1,0 +1,29 @@
+uuid: 7951d67b-7b0f-4c61-974f-b514db9710bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.my_projects
+  module:
+    - system
+    - views
+  theme:
+    - taylorwills
+id: taylorwills_views_block__my_projects_block_my_projects
+theme: taylorwills
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:my_projects-block_my_projects'
+settings:
+  id: 'views_block:my_projects-block_my_projects'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

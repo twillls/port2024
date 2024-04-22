@@ -1,21 +1,19 @@
-uuid: e4e2f804-2cd4-4c76-a27b-317b7420ba2f
+uuid: 5b7dd906-39ac-47b9-9308-f29f4e899a86
 langcode: en
 status: true
 dependencies:
   module:
+    - media
     - node
-    - taxonomy
-_core:
-  default_config_hash: WpOE_bs8Bs_HY2ns7n2r__de-xno0-Bxkqep5-MsHAs
-id: node.field_tags
-field_name: field_tags
+id: node.field_project_image
+field_name: field_project_image
 entity_type: node
 type: entity_reference
 settings:
-  target_type: taxonomy_term
+  target_type: media
 module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

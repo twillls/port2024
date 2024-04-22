@@ -89,6 +89,9 @@
   {% endif %}
 
   <div{{ content_attributes }}>
+    <h1{{ title_attributes }}>
+      {{ label|render|striptags|trim }}
+    </h1>
     {{ content }}
   </div>
 

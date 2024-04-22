@@ -7,7 +7,10 @@ const cleanCss = require('gulp-clean-css');
 
 // Concat and Minify
 gulp.task('build-css', () => {
-  return gulp.src('src/*.scss')
+  return gulp.src([
+    'src/*.scss',
+    'src/modules/*.scss'
+  ])
   .pipe(sass())
   .pipe(concat('app.css'))
   .pipe(cleanCss())
@@ -28,4 +31,5 @@ gulp.task('default', gulp.series('session-start'));
 
 gulp.task('watch', function() {
   gulp.watch('src/*.scss', gulp.series('build-css'));
+  gulp.watch('src/modules/*.scss', gulp.series('build-css'));
 });

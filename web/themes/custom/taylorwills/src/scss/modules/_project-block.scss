@@ -1,9 +1,18 @@
-#block-taylorwills-views-block-my-projects-block-my-projects {
+#block-taylorwills-views-block-my-projects-block-my-projects,
+.path-my-projects {
   h2 {
     margin-left: auto;
     margin-right: auto;
     max-width: 75rem;
     padding: 0 1.5rem;
+  }
+
+  .views-row:not(:last-child) {
+    margin-bottom: $sm-space;
+
+    @media screen and (min-width: $medium) {
+      margin-bottom: $md-space;
+    }
   }
 
   .project {
@@ -12,6 +21,10 @@
 
     .text-container {
       padding: 0 1.5rem;
+
+      @media screen and (max-width: $medium) {
+        margin-bottom: $xs-space;
+      }
 
       @media screen and (min-width: $medium) {
         left: 0;
@@ -26,12 +39,47 @@
           width: calc(50% - 5rem);
         }
       }
+
+      h3 {
+        width: fit-content;
+        
+        &:hover {
+          text-decoration: underline;
+          text-underline-offset: 1rem;
+        }
+      }
     }
 
     .field_project_image {
       margin-left: auto;
       margin-right: 0;
       border-radius: 225px 0 0 225px;
+      overflow: hidden;
+      width: calc(100% - 3rem);
+
+      @media screen and (min-width: $medium) {
+        width: 50%;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .views-row:nth-child(even) .project {
+    .text-container {
+      .text-wrapper {
+        margin-left: auto;
+      }
+    }
+
+    .field_project_image {
+      margin-right: auto;
+      margin-left: 0;
+      border-radius: 0 225px 225px 0;
       overflow: hidden;
       width: calc(100% - 3rem);
 

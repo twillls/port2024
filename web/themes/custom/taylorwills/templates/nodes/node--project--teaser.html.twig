@@ -72,7 +72,7 @@
   <div class="text-container">
     <div class="text-wrapper">
       <h3 class="project-title">
-        <a href="{{ url }}" rel="bookmark">{{ label|render|striptags|trim }}</a>
+        <a href="{{ url }}" aria-label="View full details of {{label|render|striptags|trim}} project">{{ label|render|striptags|trim }}</a>
       </h3>
       {{ content|without('field_project_image')}}
     </div>

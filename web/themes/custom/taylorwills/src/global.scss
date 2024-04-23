@@ -3,19 +3,21 @@
 @import 'modules/vars';
 @import 'modules/header';
 @import 'modules/front-page';
+@import 'modules/contact';
+@import 'modules/project-block';
 
 header .header,
 .highlighted,
-main .layout-content,
+main .main-content,
+#block-taylorwills-webform,
 .footer  {
 	margin: 0 auto;
 	max-width: 75rem;
-	padding: 1.5rem;
+	padding: 0 1.5rem;
 }
 
 body {
 	background-color: $darkest-green;
-	color: $light-green;
 }
 
 .divider {
@@ -23,8 +25,13 @@ body {
 
 	svg {
 		display: block;
-		height: 16.875rem;
+		height: 10rem;
 		margin: 0 auto;
-		width: 16.875rem;
+		width: 10rem;
+
+		@media screen and (min-width: $medium) {
+			height: 16.875rem;
+			width: 16.875rem;
+		}
 	}
 }

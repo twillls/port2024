@@ -68,21 +68,14 @@
  * @ingroup themeable
  */
 #}
-<div{{ attributes.addClass('main-content') }}>
-
-  {{ title_prefix }}
-  {% if label and not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
-
-  <div{{ content_attributes }}>
-    <h1{{ title_attributes }}>
-      {{ label|render|striptags|trim }}
-    </h1>
-    {{ content }}
+<div class="project">
+  <div class="text-container">
+    <div class="text-wrapper">
+      <h3 class="project-title">
+        <a href="{{ url }}" rel="bookmark">{{ label|render|striptags|trim }}</a>
+      </h3>
+      {{ content|without('field_project_image')}}
+    </div>
   </div>
-
+  {{ content.field_project_image }}
 </div>

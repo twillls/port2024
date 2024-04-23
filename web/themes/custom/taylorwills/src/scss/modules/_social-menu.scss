@@ -1,0 +1,10 @@
+#block-taylorwills-socialmenu-2 {
+  ul {
+    display: flex;
+    justify-content: center;
+
+    li:nth-child(n+1) {
+      padding-right: .5rem;
+    }
+  }
+}

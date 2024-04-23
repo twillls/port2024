@@ -12,6 +12,7 @@ dependencies:
     - link
     - media_library
     - paragraphs
+    - path
     - text
 id: node.project.default
 targetEntityType: node
@@ -61,9 +62,22 @@ content:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   promote:
     type: boolean_checkbox
     weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 7
     region: content
     settings:
       display_label: true
@@ -78,7 +92,5 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
-  path: true
-  status: true
   sticky: true
   uid: true

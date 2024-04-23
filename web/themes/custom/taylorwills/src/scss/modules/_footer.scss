@@ -1,0 +1,22 @@
+footer {
+  text-align: center;
+  padding-top: $lg-space;
+  padding-bottom: $sm-space;
+
+  @media screen and (min-width: $medium) {
+    padding-top: $xl-space;
+    padding-bottom: $md-space;
+  }
+
+  nav {
+    margin: $xs-space 0;
+
+    @media screen and (min-width: $medium) {
+      margin: $sm-space 0;      
+    }
+  }
+
+  svg {
+    max-width: $lg-space;
+  }
+}

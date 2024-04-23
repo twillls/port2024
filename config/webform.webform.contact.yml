@@ -237,7 +237,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: '[webform_submission:values:email:raw]'
+      to_mail: '[current-user:mail]'
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
@@ -250,8 +250,8 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: 'Thank you for reaching out!'
-      body: "<p>Thank you for reaching out on [webform_submission:created]!</p><p>Here's what you sent me:</p><p>[webform_submission:values]</p><p>&nbsp;</p><p>You can expect a response within 24-48 hours. Until then, sit tight and get ready to create!</p>"
+      subject: '[webform_submission:values:subject:raw]'
+      body: '[webform_submission:values:message:value]'
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
@@ -266,7 +266,7 @@ handlers:
   email_notification:
     id: email
     handler_id: email_notification
-    label: 'A New Site Inquiry'
+    label: 'Email notification'
     notes: ''
     status: true
     conditions: {  }
@@ -274,7 +274,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: tay.dronfield@gmail.com
+      to_mail: _default
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }

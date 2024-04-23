@@ -6,6 +6,8 @@
 @import 'modules/contact';
 @import 'modules/project-block';
 @import 'modules/project-page';
+@import 'modules/footer';
+@import 'modules/social-menu';
 
 header .header,
 .highlighted,
@@ -19,6 +21,105 @@ main .main-content,
 
 body {
 	background-color: $darkest-green;
+}
+
+body, 
+p, 
+span, 
+a, 
+ul, 
+ol, 
+li, 
+blockquote, 
+form, 
+fieldset, 
+textarea, 
+input,
+label,
+table, 
+caption, 
+tbody, 
+tfoot, 
+thead, 
+tr, 
+th, 
+td {
+  font-family: $base-font-family;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5;
+  color: $light-green;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  color: $light-green;
+  font-family: $headings-font-family;
+  font-weight: 900;
+  font-style: italic;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: $xl-space auto;
+  text-align: center;
+  line-height: 1.3;
+
+  @media screen and (min-width: $medium) {
+    font-size: 4.5rem;
+  }
+}
+
+h2 {
+  display: flex;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  white-space: nowrap;
+  margin-bottom: $sm-space;
+
+  @media screen and (min-width: $medium) {
+    margin-bottom: $md-space;
+    font-size: 3rem;
+
+    &::after {
+      display: block;
+      content: '';
+      width: 100%;
+      height: 100%;
+      border-bottom: 2px solid $light-green;
+      margin-top: 35px;
+      margin-left: 2rem;
+    }
+
+    &.right-align {
+      text-align: right;
+      
+      &::before {
+        display: block;
+        content: '';
+        width: 100%;
+        height: 100%;
+        border-bottom: 2px solid $light-green;
+        margin-top: 35px;
+        margin-right: 2rem;
+      }
+
+      &::after {
+        content: none;
+      }
+    }
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: $xs-space;
+  
+  @media screen and (min-width: $medium) {
+    font-size: 2rem;
+    margin-bottom: $sm-space;
+  }
 }
 
 .divider {
@@ -35,4 +136,8 @@ body {
 			width: 16.875rem;
 		}
 	}
+}
+
+.error p {
+	text-align: center;
 }

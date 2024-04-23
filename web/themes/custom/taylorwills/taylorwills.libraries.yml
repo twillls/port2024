@@ -1,4 +1,6 @@
 global:
   css:
     theme:
-      css/app.css: {}
+      dist/css/app.css: {}
+  js:
+    dist/js/app.js: {}

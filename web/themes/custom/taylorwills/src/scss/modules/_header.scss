@@ -1,0 +1,113 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+
+  .header-button {
+    appearance: none;
+    background-color: unset;
+    background-image: url('../images/menu.svg');
+    border: 0;
+    padding: 0;
+    position: absolute;
+    top: $sm-space;
+    right: $sm-space;
+    height: 6rem;
+    width: 6rem;
+    transition: all .5s ease;
+
+    &.open {
+      background-image: url('../images/menu-close.svg');
+      z-index: 10;  
+
+      &::before {
+        background-image: url('../images/menu-close.svg');      
+        display: block;
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+      }
+
+      &::after {
+        background-image: url('../images/menu-close-hover.svg');
+        z-index: unset;
+      }
+    }
+
+    &::after {
+      background-image: url('../images/menu-hover.svg');
+      display: block;
+      content: '';
+      opacity: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: .25rem;
+      right: -.25rem;
+      transition: all .5s ease;
+      z-index: -1;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+  
+  .header-container {
+    align-items: center;
+    background-color: $light-green;
+    display: flex;
+    height: 10rem;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    left: 100%;
+    right: 0;
+    transition: all .5s ease;
+
+    &.open {
+      opacity: 1;
+      right: 0;
+      left: 0;
+    }
+
+    nav {
+      padding: 0 1.5rem;
+      margin: 0 auto;
+      max-width: 75rem;
+      width: 100%;
+    }
+  
+    ul {
+      display: flex;
+      align-items: center;
+  
+      li {
+        padding: 1rem .5rem;
+        border-bottom: 2px solid transparent;
+        transition: all .5s ease;
+
+        &:hover {
+          border-bottom-color: $green;
+          cursor: pointer;
+
+          a {
+            color: $green;
+          }
+        }
+
+        a {
+          color: $darkest-green;
+          transition: all .5s ease;
+        }
+      }
+    }
+  }
+}

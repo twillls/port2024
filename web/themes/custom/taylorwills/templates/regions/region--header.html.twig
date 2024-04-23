@@ -15,7 +15,8 @@
  */
 #}
 {% if content %}
-  <div{{ attributes.addClass('header') }}>
+  <button class="header-button" aria-expanded="false" aria-label="Open Main Navigation"></button>
+  <div{{ attributes.addClass('header-container') }}>
     {{ content }}
   </div>
 {% endif %}

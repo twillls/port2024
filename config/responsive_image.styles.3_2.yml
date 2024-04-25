@@ -1,0 +1,35 @@
+uuid: db71b764-f95d-471b-9729-154f6874ee18
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.2_3_desktop
+    - image.style.2_3_desktop_2x
+    - image.style.2_3_mobile
+    - image.style.2_3_mobile_2x
+  theme:
+    - stark
+id: '3_2'
+label: '3:2'
+image_style_mappings:
+  -
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: '(min-width:960px) 960px, (min-width:1400px) 1400px'
+      sizes_image_styles:
+        - 2_3_desktop
+        - 2_3_desktop_2x
+    breakpoint_id: stark.wide
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: 2_3_mobile_2x
+    breakpoint_id: stark.narrow
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: 2_3_mobile
+    breakpoint_id: stark.mobile
+    multiplier: 1x
+breakpoint_group: stark
+fallback_image_style: 2_3_desktop

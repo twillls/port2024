@@ -1,0 +1,21 @@
+uuid: 9ff83a2e-e06e-452a-b901-29e049ccf5bf
+langcode: en
+status: true
+dependencies: {  }
+name: 2_3_desktop
+label: '2:3 Desktop'
+effects:
+  b1e56124-10c9-4c5a-ad5d-b62a1a506e62:
+    uuid: b1e56124-10c9-4c5a-ad5d-b62a1a506e62
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1875
+      height: 1250
+      anchor: center-center
+  efdf68fe-96ff-4c82-a013-1ac29fd1a9fb:
+    uuid: efdf68fe-96ff-4c82-a013-1ac29fd1a9fb
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

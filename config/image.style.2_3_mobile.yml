@@ -1,0 +1,21 @@
+uuid: effcd117-1357-4dd3-96f9-ffe71efd6295
+langcode: en
+status: true
+dependencies: {  }
+name: 2_3_mobile
+label: '2:3 Mobile'
+effects:
+  277c10e9-df12-4d17-82de-9d0f17f3c928:
+    uuid: 277c10e9-df12-4d17-82de-9d0f17f3c928
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 750
+      height: 500
+      anchor: center-center
+  1315d21c-f8c2-499e-8527-62b8dc73eea1:
+    uuid: 1315d21c-f8c2-499e-8527-62b8dc73eea1
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

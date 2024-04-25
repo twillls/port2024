@@ -1,0 +1,21 @@
+uuid: 9b9a31f4-e8e1-4dcb-b732-60421f48f6d5
+langcode: en
+status: true
+dependencies: {  }
+name: 2_3_desktop_2x
+label: '2:3 Desktop 2x'
+effects:
+  ee806ff9-df98-4ea5-aa91-82aebf4896b4:
+    uuid: ee806ff9-df98-4ea5-aa91-82aebf4896b4
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 3750
+      height: 2500
+      anchor: center-center
+  46a6ff8a-c76a-4588-9a5b-f745b99bc7d6:
+    uuid: 46a6ff8a-c76a-4588-9a5b-f745b99bc7d6
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

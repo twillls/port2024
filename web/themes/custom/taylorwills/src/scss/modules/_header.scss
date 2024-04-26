@@ -62,7 +62,7 @@ header {
       width: 100%;
     }
   
-    ul {
+    #block-taylorwills-main-menu ul {
       display: flex;
       align-items: center;
   
@@ -89,16 +89,56 @@ header {
     }
 
     #block-taylorwills-socialmenu {
-      li:hover {
-        background-color: $darkest-green;
+      li {
+        &:hover {
+          background-color: $darkest-green;
+
+          a {
+        
+            &[href*=codepen] {
+              background-image: url('../images/codepen.svg');
+            }
+    
+            &[href*=drupal] {
+              background-image: url('../images/drupal.svg');
+            }
+    
+            &[href*=github] {
+              background-image: url('../images/github.svg');
+            }
+    
+            &[href*=glitch] {
+              background-image: url('../images/glitch.svg');
+            }
+    
+            &[href*=linkedin] {
+              background-image: url('../images/linkedin.svg');
+            }
+          }
+        }
 
         a {
-          background-image: url('../images/codepen.svg');
+        
+          &[href*=codepen] {
+            background-image: url('../images/codepen-header.svg');
+          }
+  
+          &[href*=drupal] {
+            background-image: url('../images/drupal-header.svg');
+          }
+  
+          &[href*=github] {
+            background-image: url('../images/github-header.svg');
+          }
+  
+          &[href*=glitch] {
+            background-image: url('../images/glitch-header.svg');
+          }
+  
+          &[href*=linkedin] {
+            background-image: url('../images/linkedin-header.svg');
+          }
         }
-      }
-
-      a {
-        background-image: url('../images/codepen-header.svg');
       }
     }
   }

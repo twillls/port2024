@@ -12,7 +12,7 @@ dependencies:
 id: taylorwills_views_block__my_projects_block_my_projects
 theme: taylorwills
 region: content
-weight: -2
+weight: -3
 provider: null
 plugin: 'views_block:my_projects-block_my_projects'
 settings:

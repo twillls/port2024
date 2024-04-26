@@ -1,18 +1,24 @@
 #block-taylorwills-socialmenu,
 #block-taylorwills-socialmenu-2 {
-  li {
-    border-radius: 50%;
-    padding: 1rem;
-    transition: all .5s ease;
-  }
-  
-  a {
-    background-image: url('../images/codepen.svg');
-    background-repeat: no-repeat;
-    color: transparent;
-    display: block;
-    width: 2rem;
-    height: 2rem;
-    transition: all .5s ease;
+  ul {
+    display: flex;
+    gap: 0 .5rem;
+
+    li {
+      border-radius: 50%;
+      padding: 1rem;
+      transition: all .5s ease;
+    }
+    
+    a {
+      background-image: url('../images/codepen.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      color: transparent;
+      display: block;
+      width: 1.5rem;
+      height: 1.5rem;
+      transition: all .5s ease;
+    }
   }
 }

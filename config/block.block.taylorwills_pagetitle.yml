@@ -1,0 +1,24 @@
+uuid: a42389f3-302c-4aa0-b15d-3064ae138dd9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - taylorwills
+id: taylorwills_pagetitle
+theme: taylorwills
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /my-projects

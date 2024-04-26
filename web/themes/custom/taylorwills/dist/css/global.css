@@ -110,23 +110,23 @@ header .header-container .menus {
   max-width: 75rem;
   width: 100%;
 }
-header .header-container ul {
+header .header-container #block-taylorwills-main-menu ul {
   display: flex;
   align-items: center;
 }
-header .header-container ul li {
+header .header-container #block-taylorwills-main-menu ul li {
   border-bottom: 2px solid transparent;
   padding: 1rem 0.5rem;
   transition: all 0.5s ease;
 }
-header .header-container ul li:hover {
+header .header-container #block-taylorwills-main-menu ul li:hover {
   border-bottom-color: #7a8279;
   cursor: pointer;
 }
-header .header-container ul li:hover a {
+header .header-container #block-taylorwills-main-menu ul li:hover a {
   color: #7a8279;
 }
-header .header-container ul li a {
+header .header-container #block-taylorwills-main-menu ul li a {
   color: #1b231a;
   transition: all 0.5s ease;
   font-size: 18px;
@@ -134,11 +134,35 @@ header .header-container ul li a {
 header .header-container #block-taylorwills-socialmenu li:hover {
   background-color: #1b231a;
 }
-header .header-container #block-taylorwills-socialmenu li:hover a {
+header .header-container #block-taylorwills-socialmenu li:hover a[href*=codepen] {
   background-image: url("../images/codepen.svg");
 }
-header .header-container #block-taylorwills-socialmenu a {
+header .header-container #block-taylorwills-socialmenu li:hover a[href*=drupal] {
+  background-image: url("../images/drupal.svg");
+}
+header .header-container #block-taylorwills-socialmenu li:hover a[href*=github] {
+  background-image: url("../images/github.svg");
+}
+header .header-container #block-taylorwills-socialmenu li:hover a[href*=glitch] {
+  background-image: url("../images/glitch.svg");
+}
+header .header-container #block-taylorwills-socialmenu li:hover a[href*=linkedin] {
+  background-image: url("../images/linkedin.svg");
+}
+header .header-container #block-taylorwills-socialmenu li a[href*=codepen] {
   background-image: url("../images/codepen-header.svg");
+}
+header .header-container #block-taylorwills-socialmenu li a[href*=drupal] {
+  background-image: url("../images/drupal-header.svg");
+}
+header .header-container #block-taylorwills-socialmenu li a[href*=github] {
+  background-image: url("../images/github-header.svg");
+}
+header .header-container #block-taylorwills-socialmenu li a[href*=glitch] {
+  background-image: url("../images/glitch-header.svg");
+}
+header .header-container #block-taylorwills-socialmenu li a[href*=linkedin] {
+  background-image: url("../images/linkedin-header.svg");
 }
 
 .path-frontpage h1 {
@@ -332,6 +356,33 @@ header .header-container #block-taylorwills-socialmenu a {
   padding: 200px 1.5rem;
 }
 
+.page-node-type-project p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.page-node-type-project .field_project_link a {
+  background-color: #f3f9f2;
+  color: #1b231a;
+  font-size: 1.125rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.5s ease;
+}
+.page-node-type-project .field_project_link a:hover {
+  filter: drop-shadow(-7px 7px #7a8279);
+}
+.page-node-type-project .field_project_image {
+  border: 2px solid #f3f9f2;
+  border-radius: 280px;
+  overflow: hidden;
+  margin: 3.75rem auto 0 auto;
+  width: 75%;
+}
+.page-node-type-project img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 footer {
   text-align: center;
   padding-top: 100px;
@@ -355,30 +406,62 @@ footer svg {
   max-width: 100px;
 }
 footer #block-taylorwills-socialmenu-2 ul {
-  display: flex;
   justify-content: center;
 }
 footer #block-taylorwills-socialmenu-2 ul li:hover {
   background-color: #f3f9f2;
 }
-footer #block-taylorwills-socialmenu-2 ul li:hover a {
+footer #block-taylorwills-socialmenu-2 ul li:hover a[href*=codepen] {
   background-image: url("../images/codepen-header.svg");
 }
+footer #block-taylorwills-socialmenu-2 ul li:hover a[href*=drupal] {
+  background-image: url("../images/drupal-header.svg");
+}
+footer #block-taylorwills-socialmenu-2 ul li:hover a[href*=github] {
+  background-image: url("../images/github-header.svg");
+}
+footer #block-taylorwills-socialmenu-2 ul li:hover a[href*=glitch] {
+  background-image: url("../images/glitch-header.svg");
+}
+footer #block-taylorwills-socialmenu-2 ul li:hover a[href*=linkedin] {
+  background-image: url("../images/linkedin-header.svg");
+}
+footer #block-taylorwills-socialmenu-2 ul li a[href*=codepen] {
+  background-image: url("../images/codepen.svg");
+}
+footer #block-taylorwills-socialmenu-2 ul li a[href*=drupal] {
+  background-image: url("../images/drupal.svg");
+}
+footer #block-taylorwills-socialmenu-2 ul li a[href*=github] {
+  background-image: url("../images/github.svg");
+}
+footer #block-taylorwills-socialmenu-2 ul li a[href*=glitch] {
+  background-image: url("../images/glitch.svg");
+}
+footer #block-taylorwills-socialmenu-2 ul li a[href*=linkedin] {
+  background-image: url("../images/linkedin.svg");
+}
 
-#block-taylorwills-socialmenu li,
-#block-taylorwills-socialmenu-2 li {
+#block-taylorwills-socialmenu ul,
+#block-taylorwills-socialmenu-2 ul {
+  display: flex;
+  gap: 0 0.5rem;
+}
+#block-taylorwills-socialmenu ul li,
+#block-taylorwills-socialmenu-2 ul li {
   border-radius: 50%;
   padding: 1rem;
   transition: all 0.5s ease;
 }
-#block-taylorwills-socialmenu a,
-#block-taylorwills-socialmenu-2 a {
+#block-taylorwills-socialmenu ul a,
+#block-taylorwills-socialmenu-2 ul a {
   background-image: url("../images/codepen.svg");
   background-repeat: no-repeat;
+  background-position: center;
   color: transparent;
   display: block;
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   transition: all 0.5s ease;
 }
 

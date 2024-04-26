@@ -135,12 +135,12 @@ header .header-container #block-taylorwills-main-menu ul li a {
   font-size: 18px;
 }
 header .header-container #block-taylorwills-socialmenu ul {
-  flex-wrap: wrap;
   gap: 0 0.5rem;
 }
 @media screen and (max-width: 500px) {
   header .header-container #block-taylorwills-socialmenu ul {
-    width: 70%;
+    flex-wrap: wrap;
+    width: 200px;
   }
 }
 header .header-container #block-taylorwills-socialmenu ul li:hover {
@@ -269,12 +269,12 @@ header .header-container #block-taylorwills-socialmenu ul li a[href*=linkedin] {
 }
 #block-taylorwills-views-block-my-projects-block-my-projects .views-row:not(:last-child),
 .path-my-projects .views-row:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 992px) {
   #block-taylorwills-views-block-my-projects-block-my-projects .views-row:not(:last-child),
   .path-my-projects .views-row:not(:last-child) {
-    margin-bottom: 60px;
+    margin-bottom: 100px;
   }
 }
 #block-taylorwills-views-block-my-projects-block-my-projects .project,
@@ -310,12 +310,34 @@ header .header-container #block-taylorwills-socialmenu ul li a[href*=linkedin] {
 }
 #block-taylorwills-views-block-my-projects-block-my-projects .project .text-container h3,
 .path-my-projects .project .text-container h3 {
+  align-items: center;
+  border-bottom: 2px solid transparent;
+  display: flex;
   width: fit-content;
+  padding-bottom: 1rem;
+  transition: all 0.5s ease;
+}
+#block-taylorwills-views-block-my-projects-block-my-projects .project .text-container h3::after,
+.path-my-projects .project .text-container h3::after {
+  background-image: url("../images/link-star.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.5rem;
 }
 #block-taylorwills-views-block-my-projects-block-my-projects .project .text-container h3:hover,
 .path-my-projects .project .text-container h3:hover {
-  text-decoration: underline;
-  text-underline-offset: 1rem;
+  border-bottom-color: #f3f9f2;
+}
+@media screen and (min-width: 992px) {
+  #block-taylorwills-views-block-my-projects-block-my-projects .project .text-container h3::after,
+  .path-my-projects .project .text-container h3::after {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 #block-taylorwills-views-block-my-projects-block-my-projects .project .field_project_image,
 .path-my-projects .project .field_project_image {

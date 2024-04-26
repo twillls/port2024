@@ -91,11 +91,11 @@ header {
     }
 
     #block-taylorwills-socialmenu ul {
-      flex-wrap: wrap;
       gap: 0 0.5rem;
       
       @media screen and (max-width: 500px) {
-        width: 70%;        
+        flex-wrap: wrap;
+        width: 200px;        
       }
 
       li {

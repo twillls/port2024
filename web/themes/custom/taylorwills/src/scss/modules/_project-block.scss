@@ -8,10 +8,10 @@
   }
 
   .views-row:not(:last-child) {
-    margin-bottom: $sm-space;
+    margin-bottom: $md-space;
 
     @media screen and (min-width: $medium) {
-      margin-bottom: $md-space;
+      margin-bottom: $lg-space;
     }
   }
 
@@ -41,11 +41,33 @@
       }
 
       h3 {
+        align-items: center;
+        border-bottom: 2px solid transparent;
+        display: flex;
         width: fit-content;
+        padding-bottom: 1rem;
+        transition: all .5s ease;
+
+        &::after {
+          background-image: url('../images/link-star.svg');
+          background-position: center;
+          background-repeat: no-repeat;
+          content: '';
+          display: block;
+          width: 1.5rem;
+          height: 1.5rem;
+          margin-left: .5rem;
+        }
         
         &:hover {
-          text-decoration: underline;
-          text-underline-offset: 1rem;
+          border-bottom-color: $light-green;
+        }
+
+        @media screen and (min-width: $medium) {
+          &::after {
+            width: 2rem;
+            height: 2rem;
+          }
         }
       }
     }

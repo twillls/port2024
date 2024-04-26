@@ -39,7 +39,6 @@ header {
     align-items: center;
     background-color: $light-green;
     display: flex;
-    height: 10rem;
     position: absolute;
     top: 0;
     opacity: 0;
@@ -56,15 +55,18 @@ header {
     }
 
     .menus {
-      padding: 0 1.5rem;
-      margin: 0 auto;
+      padding: 1.375rem 1.5rem;
       max-width: 75rem;
-      width: 100%;
+
+      @media screen and (min-width: $medium) {
+        margin: 0 auto;
+        width: 100%;
+      }
     }
   
     #block-taylorwills-main-menu ul {
+      align-items: center;    
       display: flex;
-      align-items: center;
   
       li {
         border-bottom: 2px solid transparent;
@@ -88,7 +90,14 @@ header {
       }
     }
 
-    #block-taylorwills-socialmenu {
+    #block-taylorwills-socialmenu ul {
+      flex-wrap: wrap;
+      gap: 0 0.5rem;
+      
+      @media screen and (max-width: 500px) {
+        width: 70%;        
+      }
+
       li {
         &:hover {
           background-color: $darkest-green;

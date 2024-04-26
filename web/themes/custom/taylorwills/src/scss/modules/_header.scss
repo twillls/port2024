@@ -67,8 +67,8 @@ header {
       align-items: center;
   
       li {
-        padding: 1rem .5rem;
         border-bottom: 2px solid transparent;
+        padding: 1rem .5rem;
         transition: all .5s ease;
 
         &:hover {
@@ -83,7 +83,22 @@ header {
         a {
           color: $darkest-green;
           transition: all .5s ease;
+          font-size: 18px;
         }
+      }
+    }
+
+    #block-taylorwills-socialmenu {
+      li:hover {
+        background-color: $darkest-green;
+
+        a {
+          background-image: url('../images/codepen.svg');
+        }
+      }
+
+      a {
+        background-image: url('../images/codepen-header.svg');
       }
     }
   }

@@ -19,7 +19,12 @@ main .main-content,
 	padding: 0 1.5rem;
 }
 
-body {
+body.light-mode {
+	background-color: $green;
+}
+
+body,
+body.dark-mode {
 	background-color: $darkest-green;
 }
 

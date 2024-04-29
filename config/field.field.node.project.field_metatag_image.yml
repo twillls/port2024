@@ -1,0 +1,29 @@
+uuid: a9b23326-1775-488d-898d-2c8f4f62697d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatag_image
+    - media.type.image
+    - node.type.project
+id: node.project.field_metatag_image
+field_name: field_metatag_image
+entity_type: node
+bundle: project
+label: 'Metatag Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

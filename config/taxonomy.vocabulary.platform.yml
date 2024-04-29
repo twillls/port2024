@@ -1,0 +1,8 @@
+uuid: cd365a54-275f-45a9-a1b3-0f37aaa31d0d
+langcode: en
+status: true
+dependencies: {  }
+name: Platform
+vid: platform
+description: 'A platform on which a site or project was created'
+weight: 0

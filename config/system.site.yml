@@ -3,8 +3,8 @@ _core:
 langcode: en
 uuid: 635ab38f-9dc1-4476-b72e-daeedbc5066f
 name: 'Taylor Wills'
-mail: t@ylorwills.com
-slogan: ''
+mail: taylor@taylorwills.site
+slogan: 'Taylor Wills Portfolio Site'
 page:
   403: /node/6
   404: /node/7

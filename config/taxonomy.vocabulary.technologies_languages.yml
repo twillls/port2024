@@ -1,0 +1,8 @@
+uuid: 0e552e65-5189-4f99-8999-c56c5bc73b44
+langcode: en
+status: true
+dependencies: {  }
+name: Technologies/Languages
+vid: technologies_languages
+description: 'Technologies or languages utilized within a project'
+weight: 0

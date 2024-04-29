@@ -2,9 +2,14 @@ uuid: b8848c38-63a4-44ee-9230-e97e906d8775
 langcode: en
 status: open
 dependencies:
+  module:
+    - antibot
   enforced:
     module:
       - webform
+third_party_settings:
+  antibot:
+    antibot: true
 _core:
   default_config_hash: _je-MWeeJB6gfm6iECiqjcyNetfMFbn-YIInYwZ1gIk
 weight: 0
@@ -17,7 +22,7 @@ id: contact
 title: 'Get in touch'
 description: '<p>Basic email contact webform.</p>'
 categories: {  }
-elements: |
+elements: |-
   name:
     '#title': 'Your Name'
     '#type': textfield
@@ -41,6 +46,8 @@ elements: |
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
+    '#access_update_roles': {  }
+    '#access_view_roles': {  }
     '#submit__label': 'Send message'
 css: ''
 javascript: ''
@@ -237,7 +244,7 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: '[current-user:mail]'
+      to_mail: '[webform_submission:values:email:raw]'
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }

@@ -1,20 +1,36 @@
 .page-node-type-project {
   p {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
   }
 
-  .field_project_link a {
-    background-color: $light-green;
-    color: $darkest-green;
-    font-size: 1.125rem;
-    padding: .5rem 1rem; 
-    transition: all .5s ease;
-    
-    &:hover {
-      filter: drop-shadow(-7px 7px $green);
-    }
+  .field_platform {
+    margin-bottom: .5rem;
   }
+
+  .field_technologies_and_languages,
+  .field_platform {
+    display: block;
+    font-size: 1.25rem;
+  }
+
+  .field_project_link {
+    margin-top: 2rem;
+
+    a {
+      background-color: $light-green;
+      color: $darkest-green;
+      display: block;
+      font-size: 1.125rem;
+      padding: .5rem 1rem; 
+      transition: all .5s ease;
+      width: fit-content;
+      
+      &:hover {
+        filter: drop-shadow(-7px 7px $green);
+      }
+    }
+  } 
 
   .field_project_image {
     border: 2px solid $light-green;

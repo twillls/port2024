@@ -59,14 +59,12 @@
 {% else %}
   <div{{ attributes.addClass('field', field_name) }}>
     <span{{ title_attributes.addClass(title_classes) }}>{{ label }}:</span>
-    {% if multiple %}
-      <div>
-    {% endif %}
     {% for item in items %}
-      <span{{ item.attributes }}>{{ item.content }}</span>
+      {% if loop.last %}
+        <span{{ item.attributes }}>{{ item.content }}</span>
+      {% else %}
+        <span{{ item.attributes }}>{{ item.content }},</span>
+      {% endif %}
     {% endfor %}
-    {% if multiple %}
-      </div>
-    {% endif %}
   </div>
 {% endif %}

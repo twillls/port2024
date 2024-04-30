@@ -40,9 +40,7 @@
       }
 
       h3 {
-        align-items: center;
         border-bottom: 2px solid transparent;
-        display: flex;
         width: fit-content;
         padding-bottom: 1rem;
         transition: all .5s ease;
@@ -52,10 +50,11 @@
           background-position: center;
           background-repeat: no-repeat;
           content: '';
-          display: block;
+          display: inline-block;
           width: 1.5rem;
           height: 1.5rem;
           margin-left: .5rem;
+          vertical-align: middle;
         }
         
         &:hover {
@@ -70,7 +69,14 @@
         }
       }
 
-      .field_platform {
+      p, 
+      .body {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+      }
+
+      .field_platform,
+      .field_hosted_on {
         margin-bottom: .5rem;
       }
     }

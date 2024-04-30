@@ -313,9 +313,7 @@ header .header-container #block-taylorwills-socialmenu ul li a[href*=linkedin] {
 }
 #block-taylorwills-views-block-my-projects-block-my-projects .project .text-container h3,
 .path-my-projects .project .text-container h3 {
-  align-items: center;
   border-bottom: 2px solid transparent;
-  display: flex;
   width: fit-content;
   padding-bottom: 1rem;
   transition: all 0.5s ease;
@@ -326,10 +324,11 @@ header .header-container #block-taylorwills-socialmenu ul li a[href*=linkedin] {
   background-position: center;
   background-repeat: no-repeat;
   content: "";
-  display: block;
+  display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
   margin-left: 0.5rem;
+  vertical-align: middle;
 }
 #block-taylorwills-views-block-my-projects-block-my-projects .project .text-container h3:hover,
 .path-my-projects .project .text-container h3:hover {
@@ -342,8 +341,17 @@ header .header-container #block-taylorwills-socialmenu ul li a[href*=linkedin] {
     height: 2rem;
   }
 }
+#block-taylorwills-views-block-my-projects-block-my-projects .project .text-container p,
+#block-taylorwills-views-block-my-projects-block-my-projects .project .text-container .body,
+.path-my-projects .project .text-container p,
+.path-my-projects .project .text-container .body {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
 #block-taylorwills-views-block-my-projects-block-my-projects .project .text-container .field_platform,
-.path-my-projects .project .text-container .field_platform {
+#block-taylorwills-views-block-my-projects-block-my-projects .project .text-container .field_hosted_on,
+.path-my-projects .project .text-container .field_platform,
+.path-my-projects .project .text-container .field_hosted_on {
   margin-bottom: 0.5rem;
 }
 #block-taylorwills-views-block-my-projects-block-my-projects .project .field_project_image,
@@ -397,15 +405,18 @@ header .header-container #block-taylorwills-socialmenu ul li a[href*=linkedin] {
   padding: 200px 1.5rem;
 }
 
-.page-node-type-project p {
+.page-node-type-project p,
+.page-node-type-project .body {
   font-size: 1.25rem;
   margin-bottom: 1rem;
 }
-.page-node-type-project .field_platform {
+.page-node-type-project .field_platform,
+.page-node-type-project .field_hosted_on {
   margin-bottom: 0.5rem;
 }
 .page-node-type-project .field_technologies_and_languages,
-.page-node-type-project .field_platform {
+.page-node-type-project .field_platform,
+.page-node-type-project .field_hosted_on {
   display: block;
   font-size: 1.25rem;
 }

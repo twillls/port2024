@@ -1,15 +1,18 @@
 .page-node-type-project {
-  p {
+  p,
+  .body {
     font-size: 1.25rem;
     margin-bottom: 1rem;
   }
 
-  .field_platform {
+  .field_platform,
+  .field_hosted_on {
     margin-bottom: .5rem;
   }
 
   .field_technologies_and_languages,
-  .field_platform {
+  .field_platform,
+  .field_hosted_on {
     display: block;
     font-size: 1.25rem;
   }

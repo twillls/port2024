@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.project.body
+    - field.field.node.project.field_hosted_on
     - field.field.node.project.field_metatag_description
     - field.field.node.project.field_metatag_image
     - field.field.node.project.field_paragraphs
@@ -73,6 +74,7 @@ third_party_settings:
         required_fields: true
     group_taxonomy:
       children:
+        - field_hosted_on
         - field_platform
         - field_technologies_and_languages
       label: Taxonomy
@@ -101,6 +103,12 @@ content:
       summary_rows: 3
       placeholder: ''
       show_summary: false
+    third_party_settings: {  }
+  field_hosted_on:
+    type: options_buttons
+    weight: 11
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_metatag_description:
     type: text_textarea
@@ -137,7 +145,7 @@ content:
     third_party_settings: {  }
   field_platform:
     type: options_buttons
-    weight: 10
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -158,7 +166,7 @@ content:
     third_party_settings: {  }
   field_technologies_and_languages:
     type: options_buttons
-    weight: 12
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }

@@ -1,0 +1,29 @@
+uuid: ae30bda8-3e0d-4396-930a-b12a57995322
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hosted_on
+    - node.type.project
+    - taxonomy.vocabulary.hosted_on
+id: node.project.field_hosted_on
+field_name: field_hosted_on
+entity_type: node
+bundle: project
+label: 'Hosted on'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      hosted_on: hosted_on
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

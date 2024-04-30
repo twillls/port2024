@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.project.body
+    - field.field.node.project.field_hosted_on
     - field.field.node.project.field_metatag_description
     - field.field.node.project.field_metatag_image
     - field.field.node.project.field_paragraphs
@@ -29,13 +30,21 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  field_platform:
+  field_hosted_on:
     type: entity_reference_label
     label: inline
     settings:
       link: false
     third_party_settings: {  }
     weight: 2
+    region: content
+  field_platform:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 3
     region: content
   field_project_image:
     type: entity_reference_entity_view
@@ -52,7 +61,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
 hidden:
   field_metatag_description: true

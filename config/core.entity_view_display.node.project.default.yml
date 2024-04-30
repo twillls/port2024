@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.project.body
+    - field.field.node.project.field_hosted_on
     - field.field.node.project.field_metatag_description
     - field.field.node.project.field_metatag_image
     - field.field.node.project.field_paragraphs
@@ -29,6 +30,14 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_hosted_on:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
   field_paragraphs:
     type: entity_reference_revisions_entity_view
     label: hidden
@@ -36,7 +45,7 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 5
+    weight: 6
     region: content
   field_platform:
     type: entity_reference_label
@@ -44,7 +53,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_project_image:
     type: entity_reference_entity_view
@@ -53,7 +62,7 @@ content:
       view_mode: '3_2'
       link: false
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   field_project_link:
     type: link
@@ -65,7 +74,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   field_technologies_and_languages:
     type: entity_reference_label
@@ -73,7 +82,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
 hidden:
   field_metatag_description: true

@@ -9,6 +9,7 @@
 @import 'modules/project-detail';
 @import 'modules/footer';
 @import 'modules/social-menu';
+@import 'modules/local-tasks';
 
 header .header,
 .highlighted,
@@ -81,7 +82,7 @@ h1 {
   }
 }
 
-h2 {
+h2:not(.toolbar-menu__title) {
   display: flex;
   font-size: 2rem;
   line-height: 1.5rem;

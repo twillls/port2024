@@ -1,0 +1,14 @@
+#block-taylorwills-primary-local-tasks {
+  ul {
+    display: flex;
+    gap: .5rem;
+
+    a {
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        border-color: $light-green;
+      }
+    }
+  }
+}

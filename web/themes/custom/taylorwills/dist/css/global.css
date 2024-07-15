@@ -581,6 +581,17 @@ footer #block-taylorwills-socialmenu-2 ul li a[href*=linkedin] {
   transition: all 0.5s ease;
 }
 
+#block-taylorwills-primary-local-tasks ul {
+  display: flex;
+  gap: 0.5rem;
+}
+#block-taylorwills-primary-local-tasks ul a {
+  border-bottom: 1px solid transparent;
+}
+#block-taylorwills-primary-local-tasks ul a:hover {
+  border-color: #f3f9f2;
+}
+
 header .header,
 .highlighted,
 main .main-content,
@@ -653,7 +664,7 @@ h1 {
   }
 }
 
-h2 {
+h2:not(.toolbar-menu__title) {
   display: flex;
   font-size: 2rem;
   line-height: 1.5rem;
@@ -661,11 +672,11 @@ h2 {
   margin-bottom: 32px;
 }
 @media screen and (min-width: 992px) {
-  h2 {
+  h2:not(.toolbar-menu__title) {
     margin-bottom: 60px;
     font-size: 3rem;
   }
-  h2::after {
+  h2:not(.toolbar-menu__title)::after {
     display: block;
     content: "";
     width: 100%;
@@ -674,10 +685,10 @@ h2 {
     margin-top: 35px;
     margin-left: 2rem;
   }
-  h2.right-align {
+  h2:not(.toolbar-menu__title).right-align {
     text-align: right;
   }
-  h2.right-align::before {
+  h2:not(.toolbar-menu__title).right-align::before {
     display: block;
     content: "";
     width: 100%;
@@ -686,7 +697,7 @@ h2 {
     margin-top: 35px;
     margin-right: 2rem;
   }
-  h2.right-align::after {
+  h2:not(.toolbar-menu__title).right-align::after {
     content: none;
   }
 }

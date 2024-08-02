@@ -7,9 +7,7 @@ header {
   .header-button {
     appearance: none;
     background: unset;
-    background-image: url('../images/menu.svg');
     border: 0;
-    filter: drop-shadow(4px 4px $darkest-green);
     padding: 0;
     position: absolute;
     top: $sm-space;
@@ -17,27 +15,47 @@ header {
     height: 6rem;
     width: 6rem;
     transition: all .5s ease;
+    z-index: 10;
 
-    &.open {
-      background: unset;
-      background-image: url('../images/menu-close.svg');
-      filter: unset;
-      z-index: 10;  
+    &.open svg {
+      .fill {
+        fill: #fff;
+      }
+
+      .stroke {
+        fill: #fff;
+      }
+
+      .icon {
+        fill: #000;
+      }
 
       &:hover {
-        filter: drop-shadow(4px 4px $darkest-green);
+        .fill {
+          fill: #000;
+        }
+  
+        .icon {
+          fill: #fff;
+        }
       }
     }
 
-    &:hover {
-      cursor: pointer;
-      filter: drop-shadow(4px 4px $green);
+    svg:hover {
+      .fill {
+        fill: #000;
+      }
+
+      .icon {
+        fill: #fff;
+      }
     }
   }
   
   .header-container {
     align-items: center;
-    background-color: $light-green;
+    background-color: $primary;
+    border: 5px solid $secondary;
     display: flex;
     position: absolute;
     top: 0;
@@ -74,16 +92,16 @@ header {
         transition: all .5s ease;
 
         &:hover {
-          border-bottom-color: $green;
+          border-bottom-color: $primary;
           cursor: pointer;
 
           a {
-            color: $green;
+            color: $primary;
           }
         }
 
         a {
-          color: $darkest-green;
+          color: $primary;
           transition: all .5s ease;
           font-size: 18px;
         }
@@ -100,7 +118,7 @@ header {
 
       li {
         &:hover {
-          background-color: $darkest-green;
+          background-color: $primary;
 
           a {
         

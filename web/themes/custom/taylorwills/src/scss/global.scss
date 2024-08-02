@@ -10,11 +10,10 @@
 @import 'modules/footer';
 @import 'modules/social-menu';
 @import 'modules/local-tasks';
+@import 'modules/about';
 
 header .header,
 .highlighted,
-main .main-content,
-#block-taylorwills-webform,
 .footer  {
 	margin: 0 auto;
 	max-width: 75rem;
@@ -22,12 +21,12 @@ main .main-content,
 }
 
 body.light-mode {
-	background-color: $green;
+	background-color: $secondary;
 }
 
 body,
 body.dark-mode {
-	background-color: $darkest-green;
+	background-color: $primary;
 }
 
 body, 
@@ -55,7 +54,7 @@ td {
   font-weight: 500;
   font-style: normal;
   line-height: 1.5;
-  color: $light-green;
+  color: $secondary;
   text-decoration: none;
 }
 
@@ -65,10 +64,9 @@ p {
 
 h1,
 h2 {
-  color: $light-green;
+  color: $secondary;
   font-family: $headings-font-family;
-  font-weight: 900;
-  font-style: italic;
+  font-weight: 700;
 }
 
 h1 {
@@ -85,41 +83,13 @@ h1 {
 h2:not(.toolbar-menu__title) {
   display: flex;
   font-size: 2rem;
-  line-height: 1.5rem;
+  line-height: 1.5;
   white-space: nowrap;
   margin-bottom: $sm-space;
 
   @media screen and (min-width: $medium) {
     margin-bottom: $md-space;
     font-size: 3rem;
-
-    &::after {
-      display: block;
-      content: '';
-      width: 100%;
-      height: 100%;
-      border-bottom: 2px solid $light-green;
-      margin-top: 35px;
-      margin-left: 2rem;
-    }
-
-    &.right-align {
-      text-align: right;
-      
-      &::before {
-        display: block;
-        content: '';
-        width: 100%;
-        height: 100%;
-        border-bottom: 2px solid $light-green;
-        margin-top: 35px;
-        margin-right: 2rem;
-      }
-
-      &::after {
-        content: none;
-      }
-    }
   }
 }
 
@@ -131,22 +101,6 @@ h3 {
     font-size: 2rem;
     margin-bottom: $sm-space;
   }
-}
-
-.divider {
-	padding: $md-space 0;
-
-	svg {
-		display: block;
-		height: 10rem;
-		margin: 0 auto;
-		width: 10rem;
-
-		@media screen and (min-width: $medium) {
-			height: 16.875rem;
-			width: 16.875rem;
-		}
-	}
 }
 
 .error p {

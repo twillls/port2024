@@ -1,0 +1,31 @@
+.path-frontpage .main-content .field.body {
+  position: relative;
+  background-color: #fff;
+  color: $primary;
+  padding-bottom: $md-space;
+
+  h2 {
+    color: $primary;
+  }
+
+  p {
+    color: $primary;
+  }
+
+  .inner-container {
+    margin: 0 auto;
+    max-width: 75rem;
+    padding: 0 1.5rem;
+  }
+
+  @media screen and (min-width: $large) {
+    &::before {
+      display: block;
+      content: '?';
+      position: absolute;
+      top: 0;
+      left: -1.75rem;
+      font-size: 3rem;
+    }
+  }
+}

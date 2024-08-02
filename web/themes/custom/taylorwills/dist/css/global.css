@@ -61,9 +61,7 @@ header {
 header .header-button {
   appearance: none;
   background: unset;
-  background-image: url("../images/menu.svg");
   border: 0;
-  filter: drop-shadow(4px 4px #1b231a);
   padding: 0;
   position: absolute;
   top: 32px;
@@ -71,23 +69,33 @@ header .header-button {
   height: 6rem;
   width: 6rem;
   transition: all 0.5s ease;
-}
-header .header-button.open {
-  background: unset;
-  background-image: url("../images/menu-close.svg");
-  filter: unset;
   z-index: 10;
 }
-header .header-button.open:hover {
-  filter: drop-shadow(4px 4px #1b231a);
+header .header-button.open svg .fill {
+  fill: #fff;
 }
-header .header-button:hover {
-  cursor: pointer;
-  filter: drop-shadow(4px 4px #7a8279);
+header .header-button.open svg .stroke {
+  fill: #fff;
+}
+header .header-button.open svg .icon {
+  fill: #000;
+}
+header .header-button.open svg:hover .fill {
+  fill: #000;
+}
+header .header-button.open svg:hover .icon {
+  fill: #fff;
+}
+header .header-button svg:hover .fill {
+  fill: #000;
+}
+header .header-button svg:hover .icon {
+  fill: #fff;
 }
 header .header-container {
   align-items: center;
-  background-color: #f3f9f2;
+  background-color: #000000;
+  border: 5px solid #ffffff;
   display: flex;
   position: absolute;
   top: 0;
@@ -123,14 +131,14 @@ header .header-container #block-taylorwills-main-menu ul li {
   transition: all 0.5s ease;
 }
 header .header-container #block-taylorwills-main-menu ul li:hover {
-  border-bottom-color: #7a8279;
+  border-bottom-color: #000000;
   cursor: pointer;
 }
 header .header-container #block-taylorwills-main-menu ul li:hover a {
-  color: #7a8279;
+  color: #000000;
 }
 header .header-container #block-taylorwills-main-menu ul li a {
-  color: #1b231a;
+  color: #000000;
   transition: all 0.5s ease;
   font-size: 18px;
 }
@@ -144,7 +152,7 @@ header .header-container #block-taylorwills-socialmenu ul {
   }
 }
 header .header-container #block-taylorwills-socialmenu ul li:hover {
-  background-color: #1b231a;
+  background-color: #000000;
 }
 header .header-container #block-taylorwills-socialmenu ul li:hover a[href*=codepen] {
   background-image: url("../images/codepen.svg");
@@ -225,8 +233,8 @@ header .header-container #block-taylorwills-socialmenu ul li a[href*=linkedin] {
   appearance: unset;
   background-color: unset;
   border: 0;
-  border-bottom: 2px solid #f3f9f2;
-  color: #f3f9f2;
+  border-bottom: 2px solid #ffffff;
+  color: #ffffff;
   padding: 0.5rem 0;
   width: 100%;
 }
@@ -252,16 +260,23 @@ header .header-container #block-taylorwills-socialmenu ul li a[href*=linkedin] {
   cursor: pointer;
 }
 .webform-submission-form .form-actions:hover::before {
-  background-color: #7a8279;
   opacity: 1;
 }
 .webform-submission-form .form-actions input {
-  background-color: #f3f9f2;
   border: 0;
   clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
-  color: #1b231a;
+  color: #000000;
   line-height: 1;
   padding: 0.5rem 1.5rem;
+}
+
+#block-taylorwills-views-block-my-projects-block-my-projects {
+  margin-top: 60px;
+}
+@media screen and (min-width: 992px) {
+  #block-taylorwills-views-block-my-projects-block-my-projects {
+    margin-top: 100px;
+  }
 }
 
 #block-taylorwills-views-block-my-projects-block-my-projects h2,
@@ -332,7 +347,7 @@ header .header-container #block-taylorwills-socialmenu ul li a[href*=linkedin] {
 }
 #block-taylorwills-views-block-my-projects-block-my-projects .project .text-container h3:hover,
 .path-my-projects .project .text-container h3:hover {
-  border-bottom-color: #f3f9f2;
+  border-bottom-color: #ffffff;
 }
 @media screen and (min-width: 992px) {
   #block-taylorwills-views-block-my-projects-block-my-projects .project .text-container h3::after,
@@ -434,7 +449,7 @@ header .header-container #block-taylorwills-socialmenu ul li a[href*=linkedin] {
 }
 #block-taylorwills-views-block-my-projects-block-my-projects .view-all a:hover,
 .path-my-projects .view-all a:hover {
-  border-bottom-color: #f3f9f2;
+  border-bottom-color: #ffffff;
 }
 @media screen and (min-width: 992px) {
   #block-taylorwills-views-block-my-projects-block-my-projects .view-all a,
@@ -475,8 +490,8 @@ header .header-container #block-taylorwills-socialmenu ul li a[href*=linkedin] {
   margin-top: 2rem;
 }
 .page-node-type-project .field_project_link a {
-  background-color: #f3f9f2;
-  color: #1b231a;
+  background-color: #ffffff;
+  color: #000000;
   display: block;
   font-size: 1.125rem;
   padding: 0.5rem 1rem;
@@ -484,10 +499,10 @@ header .header-container #block-taylorwills-socialmenu ul li a[href*=linkedin] {
   width: fit-content;
 }
 .page-node-type-project .field_project_link a:hover {
-  filter: drop-shadow(-7px 7px #7a8279);
+  filter: drop-shadow(-7px 7px #000000);
 }
 .page-node-type-project .field_project_image {
-  border: 2px solid #f3f9f2;
+  border: 2px solid #ffffff;
   border-radius: 280px;
   overflow: hidden;
   margin: 3.75rem auto 0 auto;
@@ -525,7 +540,7 @@ footer #block-taylorwills-socialmenu-2 ul {
   justify-content: center;
 }
 footer #block-taylorwills-socialmenu-2 ul li:hover {
-  background-color: #f3f9f2;
+  background-color: #ffffff;
 }
 footer #block-taylorwills-socialmenu-2 ul li:hover a[href*=codepen] {
   background-image: url("../images/codepen-header.svg");
@@ -589,13 +604,39 @@ footer #block-taylorwills-socialmenu-2 ul li a[href*=linkedin] {
   border-bottom: 1px solid transparent;
 }
 #block-taylorwills-primary-local-tasks ul a:hover {
-  border-color: #f3f9f2;
+  border-color: #ffffff;
+}
+
+.path-frontpage .main-content .field.body {
+  position: relative;
+  background-color: #fff;
+  color: #000000;
+  padding-bottom: 60px;
+}
+.path-frontpage .main-content .field.body h2 {
+  color: #000000;
+}
+.path-frontpage .main-content .field.body p {
+  color: #000000;
+}
+.path-frontpage .main-content .field.body .inner-container {
+  margin: 0 auto;
+  max-width: 75rem;
+  padding: 0 1.5rem;
+}
+@media screen and (min-width: 1200px) {
+  .path-frontpage .main-content .field.body::before {
+    display: block;
+    content: "?";
+    position: absolute;
+    top: 0;
+    left: -1.75rem;
+    font-size: 3rem;
+  }
 }
 
 header .header,
 .highlighted,
-main .main-content,
-#block-taylorwills-webform,
 .footer {
   margin: 0 auto;
   max-width: 75rem;
@@ -603,12 +644,12 @@ main .main-content,
 }
 
 body.light-mode {
-  background-color: #7a8279;
+  background-color: #ffffff;
 }
 
 body,
 body.dark-mode {
-  background-color: #1b231a;
+  background-color: #000000;
 }
 
 body,
@@ -632,11 +673,11 @@ thead,
 tr,
 th,
 td {
-  font-family: "futura-pt", sans-serif;
+  font-family: lores-12, sans-serif;
   font-weight: 500;
   font-style: normal;
   line-height: 1.5;
-  color: #f3f9f2;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -646,10 +687,9 @@ p {
 
 h1,
 h2 {
-  color: #f3f9f2;
-  font-family: "playfair-display", serif;
-  font-weight: 900;
-  font-style: italic;
+  color: #ffffff;
+  font-family: sofia-pro-soft, sans-serif;
+  font-weight: 700;
 }
 
 h1 {
@@ -667,7 +707,7 @@ h1 {
 h2:not(.toolbar-menu__title) {
   display: flex;
   font-size: 2rem;
-  line-height: 1.5rem;
+  line-height: 1.5;
   white-space: nowrap;
   margin-bottom: 32px;
 }
@@ -675,30 +715,6 @@ h2:not(.toolbar-menu__title) {
   h2:not(.toolbar-menu__title) {
     margin-bottom: 60px;
     font-size: 3rem;
-  }
-  h2:not(.toolbar-menu__title)::after {
-    display: block;
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-bottom: 2px solid #f3f9f2;
-    margin-top: 35px;
-    margin-left: 2rem;
-  }
-  h2:not(.toolbar-menu__title).right-align {
-    text-align: right;
-  }
-  h2:not(.toolbar-menu__title).right-align::before {
-    display: block;
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-bottom: 2px solid #f3f9f2;
-    margin-top: 35px;
-    margin-right: 2rem;
-  }
-  h2:not(.toolbar-menu__title).right-align::after {
-    content: none;
   }
 }
 
@@ -710,22 +726,6 @@ h3 {
   h3 {
     font-size: 2rem;
     margin-bottom: 32px;
-  }
-}
-
-.divider {
-  padding: 60px 0;
-}
-.divider svg {
-  display: block;
-  height: 10rem;
-  margin: 0 auto;
-  width: 10rem;
-}
-@media screen and (min-width: 992px) {
-  .divider svg {
-    height: 16.875rem;
-    width: 16.875rem;
   }
 }
 

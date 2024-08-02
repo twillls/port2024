@@ -29,24 +29,9 @@
  */
 #}
 <div{{ attributes }}>
-  <div class="divider">
-    <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 270">
-      <defs>
-        <style>
-          .cls-1 {
-            fill: #32423d;
-            stroke-width: 0px;
-          }
-        </style>
-      </defs>
-      <g id="design">
-        <path class="cls-1" d="M270,135c-120,8.28-126.72,15-135,135-8.28-120-15-126.72-135-135C120,126.72,126.72,120,135,0c8.28,120,15,126.72,135,135Z"/>
-      </g>
-    </svg>
-  </div>
   {{ title_prefix }}
   {% if label %}
-    <h2{{ title_attributes.addClass('right-align') }}>{{ label }}</h2>
+    <h2{{ title_attributes}}>{{ label }}</h2>
   {% endif %}
   {{ title_suffix }}
   {% block content %}
@@ -54,8 +39,5 @@
   {% endblock %}
   <div class="view-all">
     <a href="/my-projects">View all projects</a>
-  </div>
-  <div class="divider">
-    <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 270"><defs><style>.cls-1 {fill: #32423d;stroke-width: 0px;}</style></defs><g id="design"><path class="cls-1" d="M270,135c-120,8.28-126.72,15-135,135-8.28-120-15-126.72-135-135C120,126.72,126.72,120,135,0c8.28,120,15,126.72,135,135Z"/></g></svg>
   </div>
 </div>

@@ -21,8 +21,8 @@
     margin-top: 2rem;
 
     a {
-      background-color: $light-green;
-      color: $darkest-green;
+      background-color: $secondary;
+      color: $primary;
       display: block;
       font-size: 1.125rem;
       padding: .5rem 1rem; 
@@ -30,13 +30,13 @@
       width: fit-content;
       
       &:hover {
-        filter: drop-shadow(-7px 7px $green);
+        filter: drop-shadow(-7px 7px $primary);
       }
     }
   } 
 
   .field_project_image {
-    border: 2px solid $light-green;
+    border: 2px solid $secondary;
     border-radius: 280px;
     overflow: hidden;
     margin: 3.75rem auto 0 auto;

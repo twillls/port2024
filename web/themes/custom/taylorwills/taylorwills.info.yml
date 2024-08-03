@@ -10,3 +10,4 @@ regions:
   highlighted: 'Highlighted'
   content: 'Content'
   footer: 'Footer'
+  programatically_placed: 'Programatically Placed'

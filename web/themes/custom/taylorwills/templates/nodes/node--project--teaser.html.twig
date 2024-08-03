@@ -68,14 +68,14 @@
  * @ingroup themeable
  */
 #}
-<div class="project">
-  <div class="text-container">
-    <div class="text-wrapper">
+<a class="project card" href="{{ url }}" aria-label="View full details of {{label|render|striptags|trim}} project">
+  <div class="card-container">
+    {{ content.field_project_image }}
+    <div class="text-container">
       <h3 class="project-title">
-        <a href="{{ url }}" aria-label="View full details of {{label|render|striptags|trim}} project">{{ label|render|striptags|trim }}</a>
+        {{ label|render|striptags|trim }}
       </h3>
       {{ content|without('field_project_image')}}
     </div>
   </div>
-  {{ content.field_project_image }}
-</div>
+</a>

@@ -6,3 +6,4 @@ name: Platform
 vid: platform
 description: 'A platform on which a site or project was created'
 weight: 0
+new_revision: false

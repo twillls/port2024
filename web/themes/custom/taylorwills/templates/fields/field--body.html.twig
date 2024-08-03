@@ -46,6 +46,6 @@
 
 {% for item in items %}
   <div {{ attributes.addClass('field', field_name) }}>
-    <div class="inner-container">{{ item.content }}</div>
+    {{ item.content }}
   </div>
 {% endfor %}

@@ -14,29 +14,37 @@ header {
     right: $sm-space;
     height: 6rem;
     width: 6rem;
-    transition: all .5s ease;
     z-index: 10;
 
     &.open svg {
       .fill {
-        fill: #fff;
+        fill: #000;
       }
 
       .stroke {
-        fill: #fff;
+        fill: #000;
+        transition: all .5s ease;
       }
 
-      .icon {
-        fill: #000;
+      .icon-horizontal {
+        stroke: #fff;
+      }
+
+      .icon-vertical {
+        stroke: #000;
       }
 
       &:hover {
         .fill {
-          fill: #000;
+          fill: #fff;
         }
   
-        .icon {
-          fill: #fff;
+        .icon-horizontal {
+          stroke: #000;
+        }
+
+        .icon-vertical {
+          stroke: #fff;
         }
       }
     }
@@ -44,18 +52,20 @@ header {
     svg:hover {
       .fill {
         fill: #000;
+        transition: all .5s ease;
       }
 
       .icon {
-        fill: #fff;
+        stroke: #fff;
+        transition: all .5s ease;
       }
     }
   }
   
   .header-container {
     align-items: center;
-    background-color: $primary;
-    border: 5px solid $secondary;
+    background-color: $secondary;
+    border: 5px solid $tertiary;
     display: flex;
     position: absolute;
     top: 0;
@@ -73,7 +83,7 @@ header {
     }
 
     .menus {
-      padding: 1.375rem 1.5rem;
+      padding: 2.97rem 1.5rem;
       max-width: 75rem;
 
       @media screen and (min-width: $medium) {

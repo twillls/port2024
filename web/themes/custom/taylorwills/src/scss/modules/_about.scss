@@ -1,31 +1,94 @@
-.path-frontpage .main-content .field.body {
+.about-me {
   position: relative;
   background-color: #fff;
   color: $primary;
   padding-bottom: $md-space;
 
+  .inner-container {
+    margin: 0 auto;
+    max-width: 75rem;
+    padding: 0 1.5rem;
+
+    @media screen and (min-width: $large) {
+      display: flex;
+      justify-content: space-between;
+  
+      .body {
+        max-width: 50%;
+      }
+    }
+  }
+
   h2 {
     color: $primary;
+    position: relative;
+
+    @media screen and (min-width: $large) {
+      &::before {
+        display: block;
+        content: '?';
+        position: absolute;
+        top: 0;
+        left: -6.625rem;
+        line-height: 1;
+        font-size: 10rem;
+        color: $primary;
+        font-family: $base-font-family;
+        font-weight: 700;
+      }
+    }
   }
 
   p {
     color: $primary;
   }
 
-  .inner-container {
-    margin: 0 auto;
-    max-width: 75rem;
-    padding: 0 1.5rem;
-  }
+  nav.socials {
+    border: 2px solid $primary;
+    align-self: center;
+    padding: $sm-md-space;
+    position: relative;
 
-  @media screen and (min-width: $large) {
-    &::before {
-      display: block;
-      content: '?';
+    span::after {
+      display: inline-block;
+      content: '<3';
+      margin-left: .5rem;
+    }
+
+    .square {
       position: absolute;
-      top: 0;
-      left: -1.75rem;
-      font-size: 3rem;
+      width: 0.625rem;
+      height: 0.625rem;
+      background-color: $primary;
+
+      &.top {
+        top: -0.3125rem;
+      }
+
+      &.mid {
+        top: 50%;
+      }
+
+      &.bottom {
+        bottom: -0.3125rem;
+      }
+
+      &.left {
+        left: -0.3125rem;
+      }
+
+      &.right {
+        right: -0.3125rem;
+      }
+
+      &.center {
+        right: 50%;
+        left: 50%;
+      }
+    }
+
+    span {
+      color: $primary;
     }
   }
 }

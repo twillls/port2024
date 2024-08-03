@@ -82,7 +82,12 @@
     <h1{{ title_attributes }}>
       {{ label|render|striptags|trim }}
     </h1>
-    {{ content }}
+    <div class="about-me">
+      <div class="inner-container">
+        {{ content }}
+        {{ drupal_entity('block', 'taylorwills_socialmenu') }}
+      </div>
+    </div>
   </div>
 
 </div>

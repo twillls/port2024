@@ -20,6 +20,10 @@ header .header,
 	padding: 0 1.5rem;
 }
 
+.contextual-links {
+  display: none !important;
+}
+
 body.light-mode {
 	background-color: $secondary;
 }

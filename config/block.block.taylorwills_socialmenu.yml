@@ -10,14 +10,14 @@ dependencies:
     - taylorwills
 id: taylorwills_socialmenu
 theme: taylorwills
-region: header
-weight: 0
+region: programatically_placed
+weight: -4
 provider: null
 plugin: 'system_menu_block:social-menu'
 settings:
   id: 'system_menu_block:social-menu'
-  label: 'Social Menu'
-  label_display: '0'
+  label: 'Follow me on socials'
+  label_display: visible
   provider: system
   level: 1
   depth: 0

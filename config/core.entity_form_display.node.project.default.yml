@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.project.field_project_image
     - field.field.node.project.field_project_link
     - field.field.node.project.field_technologies_and_languages
+    - field.field.node.project.field_the_details
     - node.type.project
   module:
     - link
@@ -24,25 +25,15 @@ targetEntityType: node
 bundle: project
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 3
-    region: content
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
   field_hosted_on:
     type: options_buttons
-    weight: 11
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
   field_metatag_description:
     type: text_textarea
-    weight: 12
+    weight: 11
     region: content
     settings:
       rows: 5
@@ -50,14 +41,14 @@ content:
     third_party_settings: {  }
   field_metatag_image:
     type: media_library_widget
-    weight: 11
+    weight: 10
     region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
   field_paragraphs:
     type: paragraphs
-    weight: 5
+    weight: 4
     region: content
     settings:
       title: Paragraph
@@ -81,14 +72,14 @@ content:
     third_party_settings: {  }
   field_project_image:
     type: media_library_widget
-    weight: 2
+    weight: 1
     region: content
     settings:
       media_types: {  }
     third_party_settings: {  }
   field_project_link:
     type: link_default
-    weight: 4
+    weight: 3
     region: content
     settings:
       placeholder_url: ''
@@ -100,22 +91,32 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_the_details:
+    type: text_textarea_with_summary
+    weight: 2
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
   path:
     type: path
-    weight: 7
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 6
+    weight: 5
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 8
+    weight: 7
     region: content
     settings:
       display_label: true
@@ -129,11 +130,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 9
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  body: true
   created: true
   sticky: true
   uid: true

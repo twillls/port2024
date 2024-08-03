@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.project.field_project_image
     - field.field.node.project.field_project_link
     - field.field.node.project.field_technologies_and_languages
+    - field.field.node.project.field_the_details
     - node.type.project
   module:
     - user
@@ -60,4 +61,5 @@ hidden:
   field_metatag_image: true
   field_paragraphs: true
   field_project_link: true
+  field_the_details: true
   links: true

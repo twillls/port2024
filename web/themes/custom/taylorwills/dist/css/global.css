@@ -64,17 +64,20 @@ header .header-button {
   border: 0;
   padding: 0;
   position: absolute;
-  top: 32px;
-  right: 32px;
+  top: 2rem;
+  right: 2rem;
   height: 6rem;
   width: 6rem;
   z-index: 10;
+}
+header .header-button:not(.open) {
+  filter: drop-shadow(0 0 #000000);
 }
 header .header-button.open svg .fill {
   fill: #000;
 }
 header .header-button.open svg .stroke {
-  fill: #000;
+  fill: #fff;
   transition: all 0.5s ease;
 }
 header .header-button.open svg .icon-horizontal {
@@ -123,7 +126,7 @@ header .header-container .menus {
   padding: 2.97rem 1.5rem;
   max-width: 75rem;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 62rem) {
   header .header-container .menus {
     margin: 0 auto;
     width: 100%;
@@ -132,65 +135,23 @@ header .header-container .menus {
 header .header-container #block-taylorwills-main-menu ul {
   align-items: center;
   display: flex;
-}
-header .header-container #block-taylorwills-main-menu ul li {
-  border-bottom: 2px solid transparent;
-  padding: 1rem 0.5rem;
-  transition: all 0.5s ease;
-}
-header .header-container #block-taylorwills-main-menu ul li:hover {
-  border-bottom-color: #000000;
-  cursor: pointer;
-}
-header .header-container #block-taylorwills-main-menu ul li:hover a {
-  color: #000000;
+  gap: 1rem;
+  padding: 0.5rem 0;
 }
 header .header-container #block-taylorwills-main-menu ul li a {
   color: #000000;
+  border: 3px solid #000000;
+  padding: 0.5rem 1rem;
   transition: all 0.5s ease;
   font-size: 18px;
 }
-header .header-container #block-taylorwills-socialmenu ul {
-  gap: 0 0.5rem;
+header .header-container #block-taylorwills-main-menu ul li a.is-active {
+  background-color: #ff00ff;
 }
-@media screen and (max-width: 500px) {
-  header .header-container #block-taylorwills-socialmenu ul {
-    flex-wrap: wrap;
-    width: 200px;
-  }
-}
-header .header-container #block-taylorwills-socialmenu ul li:hover {
+header .header-container #block-taylorwills-main-menu ul li a:hover {
   background-color: #000000;
-}
-header .header-container #block-taylorwills-socialmenu ul li:hover a[href*=codepen] {
-  background-image: url("../images/codepen.svg");
-}
-header .header-container #block-taylorwills-socialmenu ul li:hover a[href*=drupal] {
-  background-image: url("../images/drupal.svg");
-}
-header .header-container #block-taylorwills-socialmenu ul li:hover a[href*=github] {
-  background-image: url("../images/github.svg");
-}
-header .header-container #block-taylorwills-socialmenu ul li:hover a[href*=glitch] {
-  background-image: url("../images/glitch.svg");
-}
-header .header-container #block-taylorwills-socialmenu ul li:hover a[href*=linkedin] {
-  background-image: url("../images/linkedin.svg");
-}
-header .header-container #block-taylorwills-socialmenu ul li a[href*=codepen] {
-  background-image: url("../images/codepen-header.svg");
-}
-header .header-container #block-taylorwills-socialmenu ul li a[href*=drupal] {
-  background-image: url("../images/drupal-header.svg");
-}
-header .header-container #block-taylorwills-socialmenu ul li a[href*=github] {
-  background-image: url("../images/github-header.svg");
-}
-header .header-container #block-taylorwills-socialmenu ul li a[href*=glitch] {
-  background-image: url("../images/glitch-header.svg");
-}
-header .header-container #block-taylorwills-socialmenu ul li a[href*=linkedin] {
-  background-image: url("../images/linkedin-header.svg");
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .path-frontpage h1 {
@@ -199,7 +160,7 @@ header .header-container #block-taylorwills-socialmenu ul li a[href*=linkedin] {
   background-position: bottom;
   color: transparent;
   line-height: 1.3;
-  margin: 200px auto;
+  margin: 12.5rem auto;
   text-align: center;
   width: fit-content;
 }
@@ -207,15 +168,12 @@ header .header-container #block-taylorwills-socialmenu ul li a[href*=linkedin] {
 .path-frontpage span {
   font-size: 1.125rem;
 }
-.path-frontpage .about-me {
-  background-color: #ffffff;
-}
 
 .webform-submission-form {
   max-width: 51.5rem;
   margin: 0 auto;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 62rem) {
   .webform-submission-form {
     display: flex;
     flex-wrap: wrap;
@@ -231,7 +189,7 @@ header .header-container #block-taylorwills-socialmenu ul li a[href*=linkedin] {
   width: fit-content;
   margin-bottom: 1rem;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 62rem) {
   .webform-submission-form > .form-item {
     width: 100%;
   }
@@ -282,27 +240,29 @@ header .header-container #block-taylorwills-socialmenu ul li a[href*=linkedin] {
 }
 
 #block-taylorwills-views-block-my-projects-block-my-projects {
-  margin-top: 60px;
+  margin-top: 3rem;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 75rem) {
   #block-taylorwills-views-block-my-projects-block-my-projects {
-    margin-top: 100px;
+    margin-top: 3.75rem;
   }
 }
-@media screen and (min-width: 1200px) {
-  #block-taylorwills-views-block-my-projects-block-my-projects h2 {
-    position: relative;
-  }
+#block-taylorwills-views-block-my-projects-block-my-projects h2 {
+  position: relative;
+}
+#block-taylorwills-views-block-my-projects-block-my-projects h2::before {
+  display: inline-block;
+  content: ">";
+  font-family: lores-12, sans-serif;
+  font-weight: 700;
+}
+@media screen and (min-width: 100rem) {
   #block-taylorwills-views-block-my-projects-block-my-projects h2::before {
-    display: block;
-    content: ">";
     position: absolute;
     top: 0;
     left: -5rem;
     line-height: 0.88;
     font-size: 10rem;
-    font-family: lores-12, sans-serif;
-    font-weight: 700;
   }
 }
 
@@ -316,8 +276,21 @@ header .header-container #block-taylorwills-socialmenu ul li a[href*=linkedin] {
 #block-taylorwills-views-block-my-projects-block-my-projects .view-wrapper,
 .path-my-projects .view-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+@media screen and (min-width: 62rem) {
+  #block-taylorwills-views-block-my-projects-block-my-projects .view-wrapper,
+  .path-my-projects .view-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+@media screen and (min-width: 75rem) {
+  #block-taylorwills-views-block-my-projects-block-my-projects .view-wrapper,
+  .path-my-projects .view-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 #block-taylorwills-views-block-my-projects-block-my-projects .project,
 .path-my-projects .project {
@@ -362,13 +335,77 @@ header .header-container #block-taylorwills-socialmenu ul li a[href*=linkedin] {
 .path-my-projects h1 {
   margin: 0 auto;
   max-width: 75rem;
-  padding: 200px 1.5rem;
+  padding: 12.5rem 1.5rem;
 }
 
-.page-node-type-project p,
-.page-node-type-project .body {
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
+.page-node-type-project .field_the_details {
+  position: relative;
+  background-color: #ffffff;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 75rem) {
+  .page-node-type-project .field_the_details {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+    margin-bottom: 3.75rem;
+  }
+}
+.page-node-type-project .field_the_details h2,
+.page-node-type-project .field_the_details p {
+  color: #000000;
+}
+.page-node-type-project .field_the_details h2 {
+  position: relative;
+}
+.page-node-type-project .field_the_details h2::before {
+  display: inline-block;
+  content: "!";
+  color: #000000;
+  font-family: lores-12, sans-serif;
+  font-weight: 700;
+}
+@media screen and (min-width: 100rem) {
+  .page-node-type-project .field_the_details h2::before {
+    position: absolute;
+    top: 0;
+    left: -6.625rem;
+    line-height: 1;
+    font-size: 10rem;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .page-node-type-project .field_the_details p {
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .page-node-type-project .content-block {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+  }
+}
+.page-node-type-project .field_project_image {
+  border: 2px solid #ffffff;
+  overflow: hidden;
+  width: 100%;
+}
+@media screen and (max-width: 75rem) {
+  .page-node-type-project .field_project_image {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 62rem) {
+  .page-node-type-project .field_project_image {
+    width: 50%;
+  }
+}
+.page-node-type-project .field_project_image img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .page-node-type-project .field_platform,
 .page-node-type-project .field_hosted_on {
@@ -395,76 +432,50 @@ header .header-container #block-taylorwills-socialmenu ul li a[href*=linkedin] {
 .page-node-type-project .field_project_link a:hover {
   filter: drop-shadow(-7px 7px #000000);
 }
-.page-node-type-project .field_project_image {
-  border: 2px solid #ffffff;
-  border-radius: 280px;
-  overflow: hidden;
-  margin: 3.75rem auto 0 auto;
-  width: 75%;
-}
-.page-node-type-project img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
 
 footer {
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 32px;
+  padding-top: 3.75rem;
+  padding-bottom: 2rem;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 62rem) {
   footer {
-    padding-top: 200px;
-    padding-bottom: 60px;
+    padding-top: 6.25rem;
+    padding-bottom: 3.75rem;
   }
 }
 footer nav {
-  margin: 16px 0;
+  margin: 1rem 0;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 62rem) {
   footer nav {
-    margin: 32px 0;
+    margin: 2rem 0;
   }
 }
 footer svg {
-  max-width: 100px;
+  max-width: 6.25rem;
 }
 footer #block-taylorwills-socialmenu-2 ul {
   justify-content: center;
 }
-footer #block-taylorwills-socialmenu-2 ul li:hover {
-  background-color: #ffffff;
-}
-footer #block-taylorwills-socialmenu-2 ul li:hover a[href*=codepen] {
-  background-image: url("../images/codepen-header.svg");
-}
-footer #block-taylorwills-socialmenu-2 ul li:hover a[href*=drupal] {
-  background-image: url("../images/drupal-header.svg");
-}
-footer #block-taylorwills-socialmenu-2 ul li:hover a[href*=github] {
-  background-image: url("../images/github-header.svg");
-}
-footer #block-taylorwills-socialmenu-2 ul li:hover a[href*=glitch] {
-  background-image: url("../images/glitch-header.svg");
-}
-footer #block-taylorwills-socialmenu-2 ul li:hover a[href*=linkedin] {
-  background-image: url("../images/linkedin-header.svg");
+footer #block-taylorwills-socialmenu-2 ul li {
+  background-color: #000000;
+  border-color: #ffffff;
 }
 footer #block-taylorwills-socialmenu-2 ul li a[href*=codepen] {
-  background-image: url("../images/codepen.svg");
+  background-image: url("../images/codepen-light.svg");
 }
 footer #block-taylorwills-socialmenu-2 ul li a[href*=drupal] {
-  background-image: url("../images/drupal.svg");
+  background-image: url("../images/drupal-light.svg");
 }
 footer #block-taylorwills-socialmenu-2 ul li a[href*=github] {
-  background-image: url("../images/github.svg");
+  background-image: url("../images/github-light.svg");
 }
 footer #block-taylorwills-socialmenu-2 ul li a[href*=glitch] {
-  background-image: url("../images/glitch.svg");
+  background-image: url("../images/glitch-light.svg");
 }
 footer #block-taylorwills-socialmenu-2 ul li a[href*=linkedin] {
-  background-image: url("../images/linkedin.svg");
+  background-image: url("../images/linkedin-light.svg");
 }
 
 #block-taylorwills-socialmenu ul,
@@ -474,13 +485,20 @@ footer #block-taylorwills-socialmenu-2 ul li a[href*=linkedin] {
 }
 #block-taylorwills-socialmenu ul li,
 #block-taylorwills-socialmenu-2 ul li {
-  border-radius: 50%;
-  padding: 1rem;
+  border: 3px solid #000000;
+  padding: 0.5rem;
   transition: all 0.5s ease;
+}
+#block-taylorwills-socialmenu ul li:hover,
+#block-taylorwills-socialmenu-2 ul li:hover {
+  border-color: #ff00ff;
+}
+#block-taylorwills-socialmenu ul li:hover a,
+#block-taylorwills-socialmenu-2 ul li:hover a {
+  transform: scale(1.5);
 }
 #block-taylorwills-socialmenu ul a,
 #block-taylorwills-socialmenu-2 ul a {
-  background-image: url("../images/codepen.svg");
   background-repeat: no-repeat;
   background-position: center;
   color: transparent;
@@ -488,6 +506,26 @@ footer #block-taylorwills-socialmenu-2 ul li a[href*=linkedin] {
   width: 1.5rem;
   height: 1.5rem;
   transition: all 0.5s ease;
+}
+#block-taylorwills-socialmenu ul a[href*=codepen],
+#block-taylorwills-socialmenu-2 ul a[href*=codepen] {
+  background-image: url("../images/codepen.svg");
+}
+#block-taylorwills-socialmenu ul a[href*=drupal],
+#block-taylorwills-socialmenu-2 ul a[href*=drupal] {
+  background-image: url("../images/drupal.svg");
+}
+#block-taylorwills-socialmenu ul a[href*=github],
+#block-taylorwills-socialmenu-2 ul a[href*=github] {
+  background-image: url("../images/github.svg");
+}
+#block-taylorwills-socialmenu ul a[href*=glitch],
+#block-taylorwills-socialmenu-2 ul a[href*=glitch] {
+  background-image: url("../images/glitch.svg");
+}
+#block-taylorwills-socialmenu ul a[href*=linkedin],
+#block-taylorwills-socialmenu-2 ul a[href*=linkedin] {
+  background-image: url("../images/linkedin.svg");
 }
 
 #block-taylorwills-primary-local-tasks ul {
@@ -502,22 +540,24 @@ footer #block-taylorwills-socialmenu-2 ul li a[href*=linkedin] {
 }
 
 .about-me {
+  padding-top: 3rem;
   position: relative;
-  background-color: #fff;
+  background-color: #ffffff;
   color: #000000;
-  padding-bottom: 60px;
+  padding-bottom: 3rem;
 }
-.about-me .inner-container {
-  margin: 0 auto;
-  max-width: 75rem;
-  padding: 0 1.5rem;
+@media screen and (min-width: 75rem) {
+  .about-me {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
 }
-@media screen and (min-width: 1200px) {
-  .about-me .inner-container {
+@media screen and (min-width: 75rem) {
+  .about-me .container {
     display: flex;
     justify-content: space-between;
   }
-  .about-me .inner-container .body {
+  .about-me .container .body {
     max-width: 50%;
   }
 }
@@ -525,18 +565,20 @@ footer #block-taylorwills-socialmenu-2 ul li a[href*=linkedin] {
   color: #000000;
   position: relative;
 }
-@media screen and (min-width: 1200px) {
+.about-me h2::before {
+  display: inline-block;
+  content: "?";
+  color: #000000;
+  font-family: lores-12, sans-serif;
+  font-weight: 700;
+}
+@media screen and (min-width: 100rem) {
   .about-me h2::before {
-    display: block;
-    content: "?";
     position: absolute;
     top: 0;
     left: -6.625rem;
     line-height: 1;
     font-size: 10rem;
-    color: #000000;
-    font-family: lores-12, sans-serif;
-    font-weight: 700;
   }
 }
 .about-me p {
@@ -545,8 +587,19 @@ footer #block-taylorwills-socialmenu-2 ul li a[href*=linkedin] {
 .about-me nav.socials {
   border: 2px solid #000000;
   align-self: center;
-  padding: 48px;
+  padding: 3rem;
   position: relative;
+  width: fit-content;
+}
+@media screen and (max-width: 75rem) {
+  .about-me nav.socials {
+    margin-top: 2rem;
+  }
+}
+.about-me nav.socials span {
+  display: block;
+  color: #000000;
+  margin-bottom: 1rem;
 }
 .about-me nav.socials span::after {
   display: inline-block;
@@ -577,9 +630,6 @@ footer #block-taylorwills-socialmenu-2 ul li a[href*=linkedin] {
 .about-me nav.socials .square.center {
   right: 50%;
   left: 50%;
-}
-.about-me nav.socials span {
-  color: #000000;
 }
 
 header .header,
@@ -645,11 +695,11 @@ h2 {
 
 h1 {
   font-size: 3rem;
-  margin: 200px auto;
+  margin: 12.5rem auto;
   text-align: center;
   line-height: 1.3;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 75rem) {
   h1 {
     font-size: 4.5rem;
   }
@@ -660,28 +710,34 @@ h2:not(.toolbar-menu__title) {
   font-size: 2rem;
   line-height: 1.5;
   white-space: nowrap;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 75rem) {
   h2:not(.toolbar-menu__title) {
-    margin-bottom: 60px;
+    margin-bottom: 3rem;
     font-size: 3rem;
   }
 }
 
 h3 {
   font-size: 1.5rem;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 75rem) {
   h3 {
     font-size: 2rem;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
   }
 }
 
 .error p {
   text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 75rem;
+  padding: 0 1.5rem;
 }
 
 /*# sourceMappingURL=global.css.map */

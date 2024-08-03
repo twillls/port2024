@@ -4,17 +4,17 @@ $primary: #000000;
 $secondary: #ffffff;
 $tertiary: #ff00ff;
 
-$small: 768px;
-$medium: 992px;
-$large: 1200px;
-$xlarge: 1600px;
+$small: 48rem; //768px
+$medium: 62rem; //992px
+$large: 75rem; //1200px
+$xlarge: 100rem; //1600px
 
-$xs-space: 16px;
-$sm-space: 32px;
-$sm-md-space: 48px;
-$md-space: 60px;
-$lg-space: 100px;
-$xl-space: 200px;
+$xs-space: 1rem;
+$sm-space: 2rem;
+$sm-md-space: 3rem;
+$md-space: 3.75rem;
+$lg-space: 6.25rem;
+$xl-space: 12.5rem;
 
 $headings-font-family: sofia-pro-soft, sans-serif;
 $base-font-family: lores-12, sans-serif;

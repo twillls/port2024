@@ -16,13 +16,17 @@ header {
     width: 6rem;
     z-index: 10;
 
+    &:not(.open) {
+      filter: drop-shadow(0 0 $primary);
+    }
+
     &.open svg {
       .fill {
         fill: #000;
       }
 
       .stroke {
-        fill: #000;
+        fill: #fff;
         transition: all .5s ease;
       }
 
@@ -95,85 +99,25 @@ header {
     #block-taylorwills-main-menu ul {
       align-items: center;    
       display: flex;
+      gap: 1rem;
+      padding: .5rem 0;
   
       li {
-        border-bottom: 2px solid transparent;
-        padding: 1rem .5rem;
-        transition: all .5s ease;
-
-        &:hover {
-          border-bottom-color: $primary;
-          cursor: pointer;
-
-          a {
-            color: $primary;
-          }
-        }
-
         a {
           color: $primary;
+          border: 3px solid $primary;
+          padding: .5rem 1rem;
           transition: all .5s ease;
           font-size: 18px;
-        }
-      }
-    }
 
-    #block-taylorwills-socialmenu ul {
-      gap: 0 0.5rem;
-      
-      @media screen and (max-width: 500px) {
-        flex-wrap: wrap;
-        width: 200px;        
-      }
-
-      li {
-        &:hover {
-          background-color: $primary;
-
-          a {
-        
-            &[href*=codepen] {
-              background-image: url('../images/codepen.svg');
-            }
-    
-            &[href*=drupal] {
-              background-image: url('../images/drupal.svg');
-            }
-    
-            &[href*=github] {
-              background-image: url('../images/github.svg');
-            }
-    
-            &[href*=glitch] {
-              background-image: url('../images/glitch.svg');
-            }
-    
-            &[href*=linkedin] {
-              background-image: url('../images/linkedin.svg');
-            }
-          }
-        }
-
-        a {
-        
-          &[href*=codepen] {
-            background-image: url('../images/codepen-header.svg');
+          &.is-active {
+            background-color: $tertiary;
           }
   
-          &[href*=drupal] {
-            background-image: url('../images/drupal-header.svg');
-          }
-  
-          &[href*=github] {
-            background-image: url('../images/github-header.svg');
-          }
-  
-          &[href*=glitch] {
-            background-image: url('../images/glitch-header.svg');
-          }
-  
-          &[href*=linkedin] {
-            background-image: url('../images/linkedin-header.svg');
+          &:hover {
+            background-color: $primary;
+            color: $secondary;
+            cursor: pointer;
           }
         }
       }

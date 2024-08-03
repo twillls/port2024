@@ -1,24 +1,25 @@
 #block-taylorwills-views-block-my-projects-block-my-projects {
-  margin-top: $md-space;
-
-  @media screen and (min-width: $medium) {
-    margin-top: $lg-space;
-  }
+  margin-top: $sm-md-space;
 
   @media screen and (min-width: $large) {
-    h2 {
-      position: relative;
+    margin-top: $md-space;
+  }
 
-      &::before {
-        display: block;
-        content: '>';
+  h2 {
+    position: relative;
+
+    &::before {
+      display: inline-block;
+      content: '>';
+      font-family: $base-font-family;
+      font-weight: 700;
+
+      @media screen and (min-width: $xlarge) {
         position: absolute;
         top: 0;
         left: -5rem;
         line-height: 0.88;
         font-size: 10rem;
-        font-family: $base-font-family;
-        font-weight: 700;
       }
     }
   }
@@ -33,8 +34,17 @@
 
   .view-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+
+    @media screen and (min-width: $medium) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    @media screen and (min-width: $large) {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   .project {

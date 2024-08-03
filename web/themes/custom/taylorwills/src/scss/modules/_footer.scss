@@ -1,10 +1,10 @@
 footer {
   text-align: center;
-  padding-top: $lg-space;
+  padding-top: $md-space;
   padding-bottom: $sm-space;
 
   @media screen and (min-width: $medium) {
-    padding-top: $xl-space;
+    padding-top: $lg-space;
     padding-bottom: $md-space;
   }
 
@@ -20,60 +20,31 @@ footer {
     max-width: $lg-space;
   }
 
-  #block-taylorwills-socialmenu-2 {
-    ul {
-      justify-content: center;
+  #block-taylorwills-socialmenu-2 ul {
+    justify-content: center;
 
-      li {
-        &:hover {
-          background-color: $secondary;
+    li {
+      background-color: $primary;
+      border-color: $secondary; 
 
-          a {
-        
-            &[href*=codepen] {
-              background-image: url('../images/codepen-header.svg');
-            }
-    
-            &[href*=drupal] {
-              background-image: url('../images/drupal-header.svg');
-            }
-    
-            &[href*=github] {
-              background-image: url('../images/github-header.svg');
-            }
-    
-            &[href*=glitch] {
-              background-image: url('../images/glitch-header.svg');
-            }
-    
-            &[href*=linkedin] {
-              background-image: url('../images/linkedin-header.svg');
-            }
-          }
-        }
+      a[href*=codepen] {
+        background-image: url('../images/codepen-light.svg');
+      }
 
-        a {
-        
-          &[href*=codepen] {
-            background-image: url('../images/codepen.svg');
-          }
-  
-          &[href*=drupal] {
-            background-image: url('../images/drupal.svg');
-          }
-  
-          &[href*=github] {
-            background-image: url('../images/github.svg');
-          }
-  
-          &[href*=glitch] {
-            background-image: url('../images/glitch.svg');
-          }
-  
-          &[href*=linkedin] {
-            background-image: url('../images/linkedin.svg');
-          }
-        }
+      a[href*=drupal] {
+        background-image: url('../images/drupal-light.svg');
+      }
+
+      a[href*=github] {
+        background-image: url('../images/github-light.svg');
+      }
+
+      a[href*=glitch] {
+        background-image: url('../images/glitch-light.svg');
+      }
+
+      a[href*=linkedin] {
+        background-image: url('../images/linkedin-light.svg');
       }
     }
   }

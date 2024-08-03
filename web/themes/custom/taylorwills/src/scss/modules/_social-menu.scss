@@ -5,13 +5,20 @@
     gap: 0 .5rem;
 
     li {
-      border-radius: 50%;
-      padding: 1rem;
+      border: 3px solid $primary;
+      padding: .5rem;
       transition: all .5s ease;
+
+      &:hover {
+        border-color: $tertiary;
+
+        a {
+          transform: scale(1.5);
+        }
+      }
     }
     
     a {
-      background-image: url('../images/codepen.svg');
       background-repeat: no-repeat;
       background-position: center;
       color: transparent;
@@ -19,6 +26,26 @@
       width: 1.5rem;
       height: 1.5rem;
       transition: all .5s ease;
+    
+      &[href*=codepen] {
+        background-image: url('../images/codepen.svg');
+      }
+
+      &[href*=drupal] {
+        background-image: url('../images/drupal.svg');
+      }
+
+      &[href*=github] {
+        background-image: url('../images/github.svg');
+      }
+
+      &[href*=glitch] {
+        background-image: url('../images/glitch.svg');
+      }
+
+      &[href*=linkedin] {
+        background-image: url('../images/linkedin.svg');
+      }
     }
   }
 }

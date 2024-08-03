@@ -79,7 +79,7 @@ h1 {
   text-align: center;
   line-height: 1.3;
 
-  @media screen and (min-width: $medium) {
+  @media screen and (min-width: $large) {
     font-size: 4.5rem;
   }
 }
@@ -91,8 +91,8 @@ h2:not(.toolbar-menu__title) {
   white-space: nowrap;
   margin-bottom: $sm-space;
 
-  @media screen and (min-width: $medium) {
-    margin-bottom: $md-space;
+  @media screen and (min-width: $large) {
+    margin-bottom: $sm-md-space;
     font-size: 3rem;
   }
 }
@@ -101,7 +101,7 @@ h3 {
   font-size: 1.5rem;
   margin-bottom: $xs-space;
   
-  @media screen and (min-width: $medium) {
+  @media screen and (min-width: $large) {
     font-size: 2rem;
     margin-bottom: $sm-space;
   }
@@ -109,4 +109,10 @@ h3 {
 
 .error p {
 	text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 75rem;
+  padding: 0 1.5rem;
 }

@@ -95,6 +95,9 @@ header .header-button.open svg:hover .icon-horizontal {
 header .header-button.open svg:hover .icon-vertical {
   stroke: #fff;
 }
+header .header-button svg:hover {
+  cursor: pointer;
+}
 header .header-button svg:hover .fill {
   fill: #000;
   transition: all 0.5s ease;
@@ -267,64 +270,64 @@ header .header-container #block-taylorwills-main-menu ul li a:hover {
 }
 
 #block-taylorwills-views-block-my-projects-block-my-projects,
-.path-my-projects {
+.path-my-projects main {
   margin-left: auto;
   margin-right: auto;
   max-width: 75rem;
   padding: 0 1.5rem;
 }
-#block-taylorwills-views-block-my-projects-block-my-projects .view-wrapper,
-.path-my-projects .view-wrapper {
+#block-taylorwills-views-block-my-projects-block-my-projects .my-projects-wrapper,
+.path-my-projects main .my-projects-wrapper {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
 }
 @media screen and (min-width: 62rem) {
-  #block-taylorwills-views-block-my-projects-block-my-projects .view-wrapper,
-  .path-my-projects .view-wrapper {
+  #block-taylorwills-views-block-my-projects-block-my-projects .my-projects-wrapper,
+  .path-my-projects main .my-projects-wrapper {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
 }
 @media screen and (min-width: 75rem) {
-  #block-taylorwills-views-block-my-projects-block-my-projects .view-wrapper,
-  .path-my-projects .view-wrapper {
+  #block-taylorwills-views-block-my-projects-block-my-projects .my-projects-wrapper,
+  .path-my-projects main .my-projects-wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 #block-taylorwills-views-block-my-projects-block-my-projects .project,
-.path-my-projects .project {
+.path-my-projects main .project {
   border: 5px solid transparent;
   transition: all 0.5s ease;
 }
 #block-taylorwills-views-block-my-projects-block-my-projects .project:hover,
-.path-my-projects .project:hover {
+.path-my-projects main .project:hover {
   border-color: #ff00ff;
 }
 #block-taylorwills-views-block-my-projects-block-my-projects .project:hover img,
-.path-my-projects .project:hover img {
+.path-my-projects main .project:hover img {
   filter: grayscale(0);
   scale: 1.5;
 }
 #block-taylorwills-views-block-my-projects-block-my-projects .project .text-container p,
 #block-taylorwills-views-block-my-projects-block-my-projects .project .text-container .body,
-.path-my-projects .project .text-container p,
-.path-my-projects .project .text-container .body {
+.path-my-projects main .project .text-container p,
+.path-my-projects main .project .text-container .body {
   font-size: 1.25rem;
   margin-bottom: 1rem;
 }
 #block-taylorwills-views-block-my-projects-block-my-projects .project .text-container .field_platform,
 #block-taylorwills-views-block-my-projects-block-my-projects .project .text-container .field_hosted_on,
-.path-my-projects .project .text-container .field_platform,
-.path-my-projects .project .text-container .field_hosted_on {
+.path-my-projects main .project .text-container .field_platform,
+.path-my-projects main .project .text-container .field_hosted_on {
   margin-bottom: 0.5rem;
 }
 #block-taylorwills-views-block-my-projects-block-my-projects .project .field_project_image,
-.path-my-projects .project .field_project_image {
+.path-my-projects main .project .field_project_image {
   overflow: hidden;
 }
 #block-taylorwills-views-block-my-projects-block-my-projects .project .field_project_image img,
-.path-my-projects .project .field_project_image img {
+.path-my-projects main .project .field_project_image img {
   display: block;
   width: 100%;
   height: 100%;
@@ -336,6 +339,13 @@ header .header-container #block-taylorwills-main-menu ul li a:hover {
   margin: 0 auto;
   max-width: 75rem;
   padding: 12.5rem 1.5rem;
+}
+.path-my-projects .views-exposed-form select {
+  font-family: lores-12, sans-serif;
+  background: #000000;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  margin-left: 0.5rem;
 }
 
 .page-node-type-project .field_the_details {

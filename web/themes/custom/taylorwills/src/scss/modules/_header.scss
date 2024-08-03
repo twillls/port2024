@@ -54,6 +54,8 @@ header {
     }
 
     svg:hover {
+      cursor: pointer;
+
       .fill {
         fill: #000;
         transition: all .5s ease;

@@ -47,7 +47,9 @@
   {{ attachment_before }}
 
   {% if rows -%}
-    {{ rows }}
+    <div class="my-projects-wrapper">
+      {{ rows }}
+    </div>
   {% elseif empty -%}
     {{ empty }}
   {% endif %}

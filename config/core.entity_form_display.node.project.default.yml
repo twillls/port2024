@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.project.body
     - field.field.node.project.field_hosted_on
     - field.field.node.project.field_metatag_description
     - field.field.node.project.field_metatag_image
@@ -11,6 +10,7 @@ dependencies:
     - field.field.node.project.field_platform
     - field.field.node.project.field_project_image
     - field.field.node.project.field_project_link
+    - field.field.node.project.field_project_type
     - field.field.node.project.field_technologies_and_languages
     - field.field.node.project.field_the_details
     - node.type.project
@@ -85,6 +85,12 @@ content:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
+  field_project_type:
+    type: options_select
+    weight: 26
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_technologies_and_languages:
     type: options_buttons
     weight: 13
@@ -135,7 +141,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  body: true
   created: true
   sticky: true
   uid: true

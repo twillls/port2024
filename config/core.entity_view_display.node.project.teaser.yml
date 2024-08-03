@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.project.body
     - field.field.node.project.field_hosted_on
     - field.field.node.project.field_metatag_description
     - field.field.node.project.field_metatag_image
@@ -12,6 +11,7 @@ dependencies:
     - field.field.node.project.field_platform
     - field.field.node.project.field_project_image
     - field.field.node.project.field_project_link
+    - field.field.node.project.field_project_type
     - field.field.node.project.field_technologies_and_languages
     - field.field.node.project.field_the_details
     - node.type.project
@@ -56,10 +56,10 @@ content:
     weight: 3
     region: content
 hidden:
-  body: true
   field_metatag_description: true
   field_metatag_image: true
   field_paragraphs: true
   field_project_link: true
+  field_project_type: true
   field_the_details: true
   links: true

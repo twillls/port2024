@@ -6,6 +6,8 @@
   }
 
   .views-exposed-form {
+    margin-bottom: $xs-space;
+
     select {
       font-family: $base-font-family;
       background: $primary;
